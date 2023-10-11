@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"silver-ray.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"silver-ray.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta property="og:type" content="website">
 <meta property="og:title" content="Ray的小站">
@@ -48,7 +48,119 @@
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
   </noscript>
-</head>
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
   <div class="headband"></div>
@@ -75,6 +187,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -83,11 +196,37 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </header>
         
@@ -113,7 +252,7 @@
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="Silver Ray"
-      src="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      src="/themes/img/avatar.jpg">
   <p class="site-author-name" itemprop="name">Silver Ray</p>
   <div class="site-description" itemprop="description"></div>
 </div>
@@ -164,7 +303,7 @@
     <link itemprop="mainEntityOfPage" href="https://silver-ray.github.io/2023/10/09/MATLAB-05%E9%AB%98%E9%98%B6%E7%BB%98%E5%9B%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      <meta itemprop="image" content="/themes/img/avatar.jpg">
       <meta itemprop="name" content="Silver Ray">
     </span>
 
@@ -255,7 +394,7 @@
     <link itemprop="mainEntityOfPage" href="https://silver-ray.github.io/2023/10/09/MATLAB-04%E5%88%9D%E9%98%B6%E7%BB%98%E5%9B%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      <meta itemprop="image" content="/themes/img/avatar.jpg">
       <meta itemprop="name" content="Silver Ray">
     </span>
 
@@ -318,148 +457,14 @@
     <div class="post-body" itemprop="articleBody">
           <h2 id="使用-plot-函数绘制图线">使用 <code>plot()</code>
 函数绘制图线</h2>
-<p>在MATLAB中，使用 <code>plot()</code> 函数绘制图线，其语法为：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">plot</span>(x,y,LineSpec)</span><br></pre></td></tr></table></figure>
-<p>各参数含义如下：</p>
-<ul>
-<li><code>x</code>: 图线上点的x坐标</li>
-<li><code>y</code>: 图线上点的y坐标</li>
-<li><code>Linespec</code>:
-图线的线条设定,三个指定线型,标记符号和颜色的设定符组成一个字符串,设定符不区分先后.具体细节请参考
-<a target="_blank" rel="noopener" href="https://www.mathworks.com/help/matlab/ref/linespec.html">MATLAB
-Documentation</a>.</li>
-</ul>
-<table>
-<colgroup>
-<col style="width: 18%" />
-<col style="width: 22%" />
-<col style="width: 18%" />
-<col style="width: 11%" />
-<col style="width: 18%" />
-<col style="width: 11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>线型设定符</th>
-<th>线型</th>
-<th>标记设定符</th>
-<th>标记</th>
-<th>颜色设定符</th>
-<th>颜色</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>-</code></td>
-<td>实线（默认）</td>
-<td><code>o</code></td>
-<td>圆圈</td>
-<td><code>y</code></td>
-<td>黄色</td>
-</tr>
-<tr class="even">
-<td><code>--</code></td>
-<td>虚线</td>
-<td><code>+</code></td>
-<td>加号</td>
-<td><code>m</code></td>
-<td>品红色</td>
-</tr>
-<tr class="odd">
-<td><code>:</code></td>
-<td>点线</td>
-<td><code>*</code></td>
-<td>星号</td>
-<td><code>c</code></td>
-<td>青蓝色</td>
-</tr>
-<tr class="even">
-<td><code>-.</code></td>
-<td>点划线</td>
-<td><code>.</code></td>
-<td>点</td>
-<td><code>r</code></td>
-<td>红色</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><code>x</code></td>
-<td>叉号</td>
-<td><code>g</code></td>
-<td>绿色</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td><code>s</code></td>
-<td>方形</td>
-<td><code>b</code></td>
-<td>蓝色</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><code>d</code></td>
-<td>菱形</td>
-<td><code>w</code></td>
-<td>白色</td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td><code>^</code></td>
-<td>上三角</td>
-<td><code>k</code></td>
-<td>黑色</td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><code>v</code></td>
-<td>下三角</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td><code>&gt;</code></td>
-<td>右三角</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><code>&lt;</code></td>
-<td>左三角</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td></td>
-<td><code>p</code></td>
-<td>五角形</td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td></td>
-<td><code>h</code></td>
-<td>六角形</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="hold-onoff">hold on/off</h2>
-<p>Use hold on to have both plots in one figure</p>
-<p>MATLAB在绘制图形时，会清除窗口内之前的图形，使用该指令可以保持图窗</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">hold</span> on </span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">cos</span>(<span class="number">0</span>:<span class="built_in">pi</span>/<span class="number">20</span>:<span class="number">2</span>*<span class="built_in">pi</span>));</span><br><span class="line"><span class="built_in">plot</span>(<span class="built_in">sin</span>(<span class="number">0</span>:<span class="built_in">pi</span>/<span class="number">20</span>:<span class="number">2</span>*<span class="built_in">pi</span>));</span><br><span class="line"><span class="built_in">hold</span> off</span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/09/MATLAB-04%E5%88%9D%E9%98%B6%E7%BB%98%E5%9B%BE/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -488,7 +493,7 @@ Documentation</a>.</li>
     <link itemprop="mainEntityOfPage" href="https://silver-ray.github.io/2023/10/09/MATLAB-03%E5%8F%98%E9%87%8F%E5%92%8C%E6%A1%A3%E6%A1%88%E5%AD%98%E5%8F%96/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      <meta itemprop="image" content="/themes/img/avatar.jpg">
       <meta itemprop="name" content="Silver Ray">
     </span>
 
@@ -551,236 +556,14 @@ Documentation</a>.</li>
     <div class="post-body" itemprop="articleBody">
           <h1 id="matlab-variables-and-data-access">MATLAB Variables and Data
 access</h1>
-<p>[[MATLAB3~MATLAB variable.png]]</p>
-<table>
-<thead>
-<tr class="header">
-<th>数值类型</th>
-<th>描述</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>double</td>
-<td>双精度浮点数</td>
-</tr>
-<tr class="even">
-<td>single</td>
-<td>单精度浮点数</td>
-</tr>
-<tr class="odd">
-<td>int8</td>
-<td>8位带符号整数</td>
-</tr>
-<tr class="even">
-<td>int16</td>
-<td>16位带符号整数</td>
-</tr>
-<tr class="odd">
-<td>int32</td>
-<td>32位带符号整数</td>
-</tr>
-<tr class="even">
-<td>int64</td>
-<td>64位带符号整数</td>
-</tr>
-<tr class="odd">
-<td>uint8</td>
-<td>8位无符号整数</td>
-</tr>
-<tr class="even">
-<td>uint16</td>
-<td>16位无符号整数</td>
-</tr>
-<tr class="odd">
-<td>uint32</td>
-<td>32位无符号整数</td>
-</tr>
-<tr class="even">
-<td>uint64</td>
-<td>64位无符号整数</td>
-</tr>
-</tbody>
-</table>
-<h2 id="variables">Variables</h2>
-<h3 id="characterchar">Character(char)</h3>
-<ul>
-<li>A character is represented in ASCII using a numeric code between 0
-to 255</li>
-<li>Create a character or a string by putting them into a pair of
-apostrophe</li>
-<li>Use <code>uint16()</code> to convert a char to its ASCII code</li>
-</ul>
-<h3 id="string">String</h3>
-<ul>
-<li>An array collects characters:
-<ul>
-<li><code>s1 = 'Example';</code></li>
-<li><code>s2 = 'String'</code></li>
-</ul></li>
-<li>String concatenation:
-<ul>
-<li><code>s3 = [s1 s2];</code></li>
-<li><code>s4 = [s1; s2];</code>
-<ul>
-<li>Error: Dimension of matries being concatenated are not
-consistent</li>
-<li><code>s5 = [s1; s1]</code>
-<ul>
-<li>It works well</li>
-</ul></li>
-</ul></li>
-</ul></li>
-</ul>
-<h3 id="logic-operations-and-assignments">Logic Operations and
-Assignments</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">&#x27;aardvark&#x27;</span>;</span><br><span class="line"><span class="string">&#x27;a&#x27;</span> == str				<span class="comment">% return  [1 1 0 0 0 1 0 0]</span></span><br><span class="line">str(str == <span class="string">&#x27;a&#x27;</span>) = <span class="string">&#x27;Z&#x27;</span>	<span class="comment">% return  &#x27;ZZrdvZrk&#x27;  replace &#x27;a&#x27; with &#x27;Z&#x27;</span></span><br></pre></td></tr></table></figure>
-<h3 id="structure">Structure</h3>
-<ul>
-<li>A method of storing heterogeneous data</li>
-<li>Structures contain arrays called fields</li>
-<li>Students assignment grades:</li>
-</ul>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">student.name = <span class="string">&#x27;John Doe&#x27;</span>;</span><br><span class="line">student.id = <span class="string">&#x27;jdo2@sfu.ca&#x27;</span>;</span><br><span class="line">student.number =<span class="number">301073268</span>;</span><br><span class="line">student.grade = [<span class="number">100</span> <span class="number">75</span> <span class="number">73</span>;</span><br><span class="line">				<span class="number">95</span> <span class="number">91</span> <span class="number">85.5</span>;</span><br><span class="line">				<span class="number">100</span> <span class="number">98</span> <span class="number">72</span> ]</span><br><span class="line"></span><br><span class="line">student</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr class="header">
-<th>函数名</th>
-<th>函数作用</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>struct</td>
-<td>创建结构体</td>
-</tr>
-<tr class="even">
-<td>struct2cell</td>
-<td>将结构体转换为元胞数组</td>
-</tr>
-<tr class="odd">
-<td>cell2struct</td>
-<td>将元胞数组转换为结构体</td>
-</tr>
-<tr class="even">
-<td>isstruct</td>
-<td>判断某变量是否是结构体</td>
-</tr>
-<tr class="odd">
-<td>structfun</td>
-<td>对结构体的每个字段都应用某函数</td>
-</tr>
-<tr class="even">
-<td>fieldnames</td>
-<td>获取结构体的所有字段名</td>
-</tr>
-<tr class="odd">
-<td>isfield</td>
-<td>判断结构体是否包含某字段</td>
-</tr>
-<tr class="even">
-<td>getfield</td>
-<td>获取结构体某字段的值</td>
-</tr>
-<tr class="odd">
-<td>setfield</td>
-<td>为结构体中的某字段赋值</td>
-</tr>
-<tr class="even">
-<td>rmfield</td>
-<td>删除结构体中的某字段</td>
-</tr>
-<tr class="odd">
-<td>orderfields</td>
-<td>为结构体字段排序</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>[!example]</p>
-</blockquote>
-<blockquote>
-<p><code>rmfield(student,'id')</code></p>
-</blockquote>
-<p>Nesting Structure</p>
-<h3 id="cell-array">Cell Array</h3>
-<ul>
-<li>Another method of storing heterogeneous data</li>
-<li>Similar to matrix but each entry contains different type of
-data</li>
-<li>Declared using <code>&#123; &#125;</code></li>
-<li>The two following expressions are the same
-<ul>
-<li>A{m, n} = element;</li>
-<li>A(m ,n) ={element};</li>
-</ul></li>
-<li>Each entry in a cell array hold s a pointer to a data structure</li>
-<li>Different cells of the same cell array can point to different types
-of data structures</li>
-</ul>
-<h4 id="access-cell-array">Access Cell Array</h4>
-<ul>
-<li>有两种方式访问元胞数组中的数据,分别是:
-<strong>单元索引</strong><code>()</code>，和<strong>数组索引</strong><code>&#123;&#125;</code>
-<ul>
-<li>使用单元索引(),我们得到的是一个子元胞数组.</li>
-<li>使用内容索引{},我们得到的是元胞数组对应区域中的内容.</li>
-</ul></li>
-</ul>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A(<span class="number">1</span>,<span class="number">1</span>)=&#123;[<span class="number">1</span> <span class="number">4</span> <span class="number">3</span>; <span class="number">0</span> <span class="number">5</span> <span class="number">8</span>; <span class="number">7</span> <span class="number">2</span> <span class="number">9</span>]&#125;;</span><br><span class="line">A(<span class="number">1</span>,<span class="number">2</span>)=&#123;<span class="string">&#x27;Anne Smith&#x27;</span>&#125;;</span><br><span class="line">A(<span class="number">2</span>,<span class="number">1</span>)=&#123;<span class="number">3</span>+<span class="number">7</span><span class="built_in">i</span>&#125;;</span><br><span class="line">A(<span class="number">2</span>,<span class="number">2</span>)=&#123;-<span class="built_in">pi</span>:<span class="built_in">pi</span>:<span class="built_in">pi</span>&#125;;</span><br><span class="line"></span><br><span class="line">A(<span class="number">1</span>,<span class="number">2</span>) <span class="comment">% 1*1 cell array  &#123;&#x27;Anne Smith&#x27;&#125;</span></span><br><span class="line">A&#123;<span class="number">1</span>,<span class="number">2</span>&#125; <span class="comment">% 1*10 char array &#x27;Anne Smith&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h4 id="matrix2cell-and-num2cell">matrix2cell and num2cell</h4>
-<p>use <code>help</code> or <code>doc</code></p>
-<h4 id="multidimensional-array">Multidimensional Array</h4>
-<p>[[MATLAB3~multidimensional array.png]]</p>
-<h4 id="cat">cat()</h4>
-<p>使用cat函数可以在指定维度上对元胞数组进行拼接(concatenation)</p>
-<p>[[MATLAB3~cat.png]]</p>
-<h4 id="reshape">reshape()</h4>
-<p>Create a matrix B from the matrix A below using reshape():</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A = &#123;<span class="string">&#x27;James Bond&#x27;</span>, [<span class="number">1</span> <span class="number">2</span>;<span class="number">3</span> <span class="number">4</span>;<span class="number">5</span> <span class="number">6</span>]; <span class="built_in">pi</span>, <span class="built_in">magic</span>(<span class="number">5</span>)&#125;</span><br><span class="line">C = <span class="built_in">reshape</span>(A,<span class="number">1</span>,<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>;<span class="number">4</span> <span class="number">5</span> <span class="number">6</span>]</span><br><span class="line">B = <span class="built_in">reshape</span>(A,<span class="number">3</span>,<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-<p><span class="math display">\[
-A = \left(\begin{array}{ccc} 1 &amp; 2 &amp; 3\\ 4 &amp; 5 &amp; 6
-\end{array}\right) \Rightarrow B = \left(\begin{array}{cc} 1 &amp; 5\\ 4
-&amp; 3\\ 2 &amp; 6 \end{array}\right)
-\]</span></p>
-<h2 id="file-access">File Access</h2>
-<h3 id="mat-format">MAT format</h3>
-<p>MATLAB工作区里的数据可以以 <code>.mat</code> 格式保存在文件中，使用
-<code>save</code> 函数将数据存入文件，使用 <code>load</code>
-函数从文件中读取数据</p>
-<ul>
-<li><code>save</code> 函数的语法如下：
-<ul>
-<li><code>save(filename， variables)</code> 将变量
-<code>variables</code> 以二进制形式存入文件中</li>
-<li><code>save(filename, variables, '-ascii')</code>
-将变量以文本形式存入文件中</li>
-</ul></li>
-<li><code>load</code> 函数的语法如下：
-<ul>
-<li><code>load(filename)</code>从二进制形式文件中读取数据.</li>
-<li><code>load(filename,'-ascii')</code>从文本形式文件中读取数据.</li>
-</ul></li>
-</ul>
-<p>其中参数filename和variables都是字符串格式,若不指定variables参数,则将当前工作区内所有变量存入文件中.</p>
-<blockquote>
-<p>复杂的数据格式,如struct和cell,不支持以二进制格式存储.</p>
-</blockquote>
-<h3 id="excel-file">Excel File</h3>
-<ul>
-<li>读取Excel文件：<code>[num,txt,raw] = xlsread(filename,sheet,xlRange)</code>
-<ul>
-<li>自动去掉文字部分</li>
-</ul></li>
-<li>写入Excel的语法:
-<code>xlswrite(filename,A,sheet,xlRange)</code></li>
-<li>同时读取文本和数字可以使用以下操作：<code>[Score Header] = xlsread('score.xlsx')</code></li>
-</ul>
-<h3 id="low-level-file-io-functions">Low-level File I/O Functions</h3>
-<p>同C语言的文件I/O</p>
-<p>使用 <code>type filename</code> 可以打印出文本的内容</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/09/MATLAB-03%E5%8F%98%E9%87%8F%E5%92%8C%E6%A1%A3%E6%A1%88%E5%AD%98%E5%8F%96/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -809,7 +592,7 @@ A = \left(\begin{array}{ccc} 1 &amp; 2 &amp; 3\\ 4 &amp; 5 &amp; 6
     <link itemprop="mainEntityOfPage" href="https://silver-ray.github.io/2023/10/09/MATLAB-02%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BC%8F%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      <meta itemprop="image" content="/themes/img/avatar.jpg">
       <meta itemprop="name" content="Silver Ray">
     </span>
 
@@ -871,167 +654,14 @@ A = \left(\begin{array}{ccc} 1 &amp; 2 &amp; 3\\ 4 &amp; 5 &amp; 6
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="matlab-script">MATLAB Script</h2>
-<ul>
-<li>A file containing a series of MATLAB commands</li>
-<li>Pretty much like a C/C++ program
-<ul>
-<li>However Script does not need to be compiled before run</li>
-</ul></li>
-<li>Scripts need to be saved to as <code>&lt;file&gt;.m</code> file
-before they can be run</li>
-</ul>
-<p><code>%%</code> is the symbol of section, we can run a single
-section</p>
-<p>use start indent to make code more readable</p>
-<h3 id="script-flow">Script Flow</h3>
-<ul>
-<li>Typically scripts run from the first line to the last</li>
-<li>Structured programming techniques(subroutine, loop. condition, etc.)
-are applied to make the program looks neat</li>
-</ul>
-<h3 id="flow-control">Flow Control</h3>
-<p>[[MATLAB2~flow control.png]]</p>
-<h3 id="rational-operators">Rational Operators</h3>
-<p>[[MATLAB2~relational operator.png]]</p>
-<h3 id="if-elseif-else">if elseif else</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition1</span><br><span class="line">	statement1</span><br><span class="line"><span class="keyword">elseif</span> condition2</span><br><span class="line">	statement2</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	statement3</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<h3 id="switch">switch</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> expression</span><br><span class="line"><span class="keyword">case</span> value1</span><br><span class="line">	statement1</span><br><span class="line"><span class="keyword">case</span> value2</span><br><span class="line">	statement2</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line"><span class="keyword">otherwise</span></span><br><span class="line">	statement</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<h3 id="while">while</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> expression</span><br><span class="line">	statement</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<h3 id="for">for</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> varible = start: increment: <span class="keyword">end</span></span><br><span class="line">	commands</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<h3 id="pre-allocating-space-to-varibles">Pre-allocating Space to
-Varibles</h3>
-<p>Method A:</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">tic </span><br><span class="line"><span class="keyword">for</span> ii = <span class="number">1</span>:<span class="number">2000</span></span><br><span class="line">    <span class="keyword">for</span> jj = <span class="number">1</span>:<span class="number">2000</span></span><br><span class="line">        A(ii,jj) = ii + jj;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">toc</span><br><span class="line"></span><br><span class="line"><span class="comment">%历时 1.727258 秒。</span></span><br></pre></td></tr></table></figure>
-<p>Method B:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tic</span><br><span class="line">B = zeros(2000, 2000);</span><br><span class="line">for iii = 1:size(B,1)</span><br><span class="line">    for jjj = 1:size(B,2)</span><br><span class="line">        B(iii, jjj) = iii + jjj;</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">toc</span><br><span class="line"></span><br><span class="line">%历时 0.020441 秒。</span><br></pre></td></tr></table></figure>
-<p>Method B is faster, because method B used Pre-allocating.</p>
-<p>The explanation of MATLAB:</p>
-<blockquote>
-<p>The size of the indicated variable or array appears to be changing
-with each loop iteration.Commonly, this message appears because an array
-is growing by assignment or concatenation.Growing an array by assignment
-or concatenation can be expensive.For large arrays,MATLAB must allocate
-a new block of memory and copy the older array contents to the new array
-as it makes each assignment.</p>
-</blockquote>
-<blockquote>
-<p>Programs that change the size of a variable in this way can spend
-most of their run time in this inefficient activity.There is also
-significant overhead in shrinking an array on each iteration or in
-changing the size of a variable on each iteration. In such cases,MATLAB
-must reallocate and copy the contents repeatedly.</p>
-</blockquote>
-<h3 id="break">break</h3>
-<p>Used in iteration where convergence is not guaranteed.</p>
-<h3 id="tips-for-script-writing">Tips for Script Writing</h3>
-<ul>
-<li>At the beginning of your script, use command
-<ul>
-<li><code>clear all</code> to remove previous variables</li>
-<li><code>close all</code> to close all figures</li>
-</ul></li>
-<li>Use semicolon <code>;</code> at the end of commands to inhibit
-unwanted output</li>
-<li>Use ellipsis <code>...</code> to make scripts more readable
-<ul>
-<li>MATLAB2020 and later version can break line with no need to use
-ellipsis</li>
-</ul></li>
-<li>Press <code>Ctrl+C</code> to terminate the script before</li>
-<li>conclusion</li>
-</ul>
-<h3 id="content-of-matlab-built-in-function">Content of MATLAB Built-in
-Function</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;edit(which(<span class="string">&#x27;mean.m&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">% open mean.m</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">y</span> = <span class="title">mean</span><span class="params">(x)</span></span></span><br></pre></td></tr></table></figure>
-<p>In this example, function is a keyword, y is the name of output
-variable, mean is the name of function</p>
-<h3 id="use-define-functions">Use Define Functions</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">x</span> = <span class="title">freebody</span><span class="params">(x0,v0,t)</span></span></span><br><span class="line"><span class="comment">% calculation of free falling</span></span><br><span class="line"><span class="comment">% x0: initial displacement of in m</span></span><br><span class="line"><span class="comment">% v0: initial velocity in m/sec</span></span><br><span class="line"><span class="comment">% t: the elapsed time in sec</span></span><br><span class="line"><span class="comment">% x: the depth of falling in m</span></span><br><span class="line"></span><br><span class="line">x = x0 + v0.*t + <span class="number">1</span>/<span class="number">2</span>*<span class="number">9.8</span>*t.*t;</span><br></pre></td></tr></table></figure>
-<p>Use the operator <code>.*</code> to support input vector.</p>
-<p>For example, <code>freebody([0 1], [0 1], [10 20])</code> will output
-<code>[490 1981]</code></p>
-<h3 id="function-with-multiple-inputs-and-outputs">Function with
-Multiple Inputs and Outputs</h3>
-<ul>
-<li>The acceleration of a particle and the force acting on it are as
-follows:</li>
-</ul>
-<p><span class="math display">\[
-\begin{aligned}
-a &amp;= \frac{v_2 - v_1}{t_2 - t_1}\\
-F &amp;= ma
-\end{aligned}
-\]</span> <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[a F]</span> = <span class="title">acc</span><span class="params">(v2, v1, t2, t1, m)</span></span></span><br><span class="line">a = (v2 - v1)./(t2 - t1);</span><br><span class="line">F = m.*a;</span><br></pre></td></tr></table></figure></p>
-<blockquote>
-<p>[!note] output single variable as array X = acc(10, 5, 2, 1, 10); %X
-= 5 [X Y] = acc(10, 5, 2, 1, 10); %X = 5, Y = 50</p>
-</blockquote>
-<p>If we use the following form, the output will be a array.</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">out</span> = <span class="title">acc</span><span class="params">(v2, v1, t2, t1, m)</span></span></span><br><span class="line">out(<span class="number">1</span>) = (v2 - v1)./(t2 - t1);</span><br><span class="line">out(<span class="number">2</span>) = m.*a;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function converter</span><br><span class="line"></span><br><span class="line">F = input(&#x27;The temperature in F: &#x27;);</span><br><span class="line">while ~isempty(F)</span><br><span class="line">    disp([&#x27;The temperature in C: &#x27; num2str((F-32)*5/9)]);</span><br><span class="line">    F = input(&#x27;The temperature in F: &#x27;);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-<h3 id="the-use-of-disp">The use of disp</h3>
-<p><code>disp()</code> 仅接受一个参数，下面的这种写法是错误的：</p>
-<p><code>disp('aaa',32)</code></p>
-<p><code>disp(['aaa',78])</code>
-会输出'aaaN'，因为disp将78当做一个ASCII码字符作为显示</p>
-<p>若想实现字符串和数字的混合输出，可以使用如下形式</p>
-<p><code>disp(['aaa',num2str(32)])</code>，输出aaa32。</p>
-<p><code>num2str()</code>
-函数将数字转换为字符类型数组，再通过矩阵的拼接，将两个字符类型数组拼接位一个数组，从而正常显示输出</p>
-<blockquote>
-<p>[!warning] 以下表达也可显示，但是显示形式不便于阅读</p>
-</blockquote>
-<blockquote>
-<p><code>disp(&#123;'aaa',32&#125;)</code>：使用元胞数组，显示的内容为
-<code>&#123;'aaa'&#125;    &#123;[32]&#125;</code></p>
-</blockquote>
-<h3 id="function-default-variables">Function Default Variables</h3>
-<p>函数参数意义</p>
-<p>imputname 输入变量名列表</p>
-<p>mfilename 函数源代码文件名</p>
-<p>nargin 输入变量数</p>
-<p>nargout 输出变量个数</p>
-<p>varargin 可变长输入参数列表</p>
-<p>varargout 可变长输出参数列表</p>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Variables</th>
-<th style="text-align: left;">Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">inputname</td>
-<td style="text-align: left;">Variable name of function input</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">mfilename</td>
-<td style="text-align: left;">File name of currently running
-function</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">nargin</td>
-<td style="text-align: left;">Number of function input arguments</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">varargin</td>
-<td style="text-align: left;">Variable length of argrument list</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">varargout</td>
-<td style="text-align: left;">Varible length output argument list</td>
-</tr>
-</tbody>
-</table>
-<h3 id="function-handle">Function Handle</h3>
-<p>A way to create anonymous functions, i.e., one line expression
-functions that do not have not have to be defined in .m files</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f = @(x) <span class="built_in">exp</span>(<span class="number">-2</span>*x);</span><br><span class="line">x = <span class="number">0</span>:<span class="number">0.1</span>:<span class="number">0.2</span>;</span><br><span class="line"><span class="built_in">plot</span>(x, f(x));</span><br></pre></td></tr></table></figure>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/09/MATLAB-02%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BC%8F%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1060,7 +690,7 @@ functions that do not have not have to be defined in .m files</p>
     <link itemprop="mainEntityOfPage" href="https://silver-ray.github.io/2023/10/09/MATLAB-01%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%92%8C%E7%9F%A9%E9%98%B5%E8%BE%93%E5%85%A5/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      <meta itemprop="image" content="/themes/img/avatar.jpg">
       <meta itemprop="name" content="Silver Ray">
     </span>
 
@@ -1122,149 +752,14 @@ functions that do not have not have to be defined in .m files</p>
     
     <div class="post-body" itemprop="articleBody">
           <p>不声明时默认的类型时double</p>
-<h2 id="special-variables-and-constants">Special Variables and
-Constants</h2>
-<ul>
-<li><p>ans</p></li>
-<li><p>i, j : complex number</p></li>
-<li><p>Inf : ∞</p></li>
-<li><p>eps : epsilon, 2.2204e-16</p></li>
-<li><p>NaN : not a number</p></li>
-<li><p>pi : π</p></li>
-<li><p>To list Keywords:</p>
-<ul>
-<li>&gt;&gt; iskeyword</li>
-</ul></li>
-</ul>
-<h2 id="arrayvector-and-matrix">Array(Vector and Matrix)</h2>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Row vector:</span><br><span class="line">	&gt;&gt; a = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span>]</span><br><span class="line">	</span><br><span class="line">Column vector:</span><br><span class="line">	&gt;&gt; b = [<span class="number">1</span>; <span class="number">2</span>; <span class="number">3</span>; <span class="number">4</span>]</span><br><span class="line">	</span><br><span class="line">Try:</span><br><span class="line">	&gt;&gt; a*b</span><br><span class="line">	&gt;&gt; b*a</span><br></pre></td></tr></table></figure>
-<p>Output:</p>
-<p><span class="math display">\[
-a*b=30
-\]</span></p>
-<p><span class="math display">\[
-b*a =\left(\begin{array}{cccc}
-1 &amp; 2 &amp; 3 &amp; 4\\
-2 &amp; 4 &amp; 6 &amp; 8\\
-3 &amp; 6 &amp; 9 &amp; 12\\
-4 &amp; 8 &amp; 12 &amp; 16
-\end{array}\right)
-\]</span></p>
-<p>用空格(space)隔开行元素，用分号(semicolon)隔开不同的列元素</p>
-<h3 id="array-indexing">Array Indexing</h3>
-<ol type="1">
-<li>A(n): 取出矩阵的第n个元素（MATLAB采用列优先）</li>
-<li>A(row, column): 取出矩阵第row行第column列的元素</li>
-<li>A(Matrix or Vector):
-使用矩阵或者向量的值索引，返回一个按原方式排列的矩阵或向量</li>
-<li>A(row vector, column vector):
-使用第一个向量作为行数，第二个向量作为列数，取二者交叉元素</li>
-</ol>
-<h3 id="colon-operator">Colon Operator</h3>
-<p>create a array: <code>start: step: stop</code>, different from pyton:
-<code>range(start, stop, step)</code></p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; B = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">&gt;&gt; B = <span class="number">1</span>:<span class="number">2</span>:<span class="number">5</span></span><br><span class="line">&gt;&gt; B = [<span class="number">1</span>:<span class="number">5</span>; <span class="number">2</span>:<span class="number">3</span>:<span class="number">15</span>; <span class="number">-2</span>:<span class="number">0.5</span>:<span class="number">0</span>]</span><br><span class="line">&gt;&gt; str = <span class="string">&#x27;a&#x27;</span>:<span class="number">2</span>:<span class="string">&#x27;z&#x27;</span></span><br></pre></td></tr></table></figure>
-<p>使用冒号运算符清空矩阵中的某一行或者某一列：</p>
-<p><code>A(3,:) = []</code>: 清空第三行，这里的[ ]表示empty</p>
-<h3 id="array-concatenation">Array Concatenation</h3>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; A = [<span class="number">1</span> <span class="number">2</span>; <span class="number">3</span> <span class="number">4</span>];</span><br><span class="line">&gt;&gt; B = [<span class="number">9</span> <span class="number">9</span>; <span class="number">9</span> <span class="number">9</span>];</span><br><span class="line">&gt;&gt; C = [A B]</span><br><span class="line">&gt;&gt; D = [A;B]</span><br></pre></td></tr></table></figure>
-<p>Output:</p>
-<p><span class="math display">\[
-A = \left(\begin{array}{cc} 1 &amp; 2\\ 3 &amp; 4 \end{array}\right)\\
-B = \left(\begin{array}{cc} 9 &amp; 9\\ 9 &amp; 9 \end{array}\right)\\
-C = \left(\begin{array}{cccc} 1 &amp; 2 &amp; 9 &amp; 9\\ 3 &amp; 4
-&amp; 9 &amp; 9 \end{array}\right)\\
-D = \left(\begin{array}{cc} 1 &amp; 2\\ 3 &amp; 4\\ 9 &amp; 9\\ 9 &amp;
-9 \end{array}\right)
-\]</span></p>
-<h3 id="array-manipulation">Array Manipulation</h3>
-<p>Operators on array: <code>+</code> <code>-</code> <code>*</code>
-<code>/</code> <code>^</code> <code>.</code> <code>'</code></p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; A+B    <span class="comment">%对应的每个元素(entry)相加</span></span><br><span class="line">&gt;&gt; A*B    <span class="comment">%矩阵做乘法</span></span><br><span class="line">&gt;&gt; A.*B   <span class="comment">%矩阵的对应元素(entry)相乘</span></span><br><span class="line">&gt;&gt; A/B    <span class="comment">%A乘以B的逆矩阵(inverse matirx)</span></span><br><span class="line">&gt;&gt; A/B    <span class="comment">%A和B的每个对应元素相除</span></span><br><span class="line">&gt;&gt; A&#x27;     <span class="comment">%转置(transpose) B矩阵</span></span><br></pre></td></tr></table></figure>
-<p>注意：当a为数值时，A.*a和A*a相同，A.\a和A\a相同，但是A^a和A.^a不同</p>
-<h3 id="some-special-matrix">Some Special Matrix</h3>
-<ul>
-<li><code>linspace()</code>: linearly spaced vectors
-<ul>
-<li><code>linspace(start, stop, number)</code></li>
-</ul></li>
-<li><code>eys()</code>: n*n identity matrix</li>
-<li><code>zeros(n1, n2)</code>: n1*n2 zero matrix</li>
-<li><code>ones(n1, n2)</code>: n1*n2 matrix with every entry as 1</li>
-<li><code>diag()</code>: diagonal matrix</li>
-<li><code>rand()</code>: uniformly distributed random numbers</li>
-</ul>
-<h3 id="some-matrix-function">Some Matrix Function</h3>
-<p>column width function</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; <span class="built_in">max</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">max</span>(<span class="built_in">max</span>(A))</span><br><span class="line">&gt;&gt; <span class="built_in">min</span>(A)</span><br><span class="line">&gt;&gt; sum(A)</span><br><span class="line">&gt;&gt; <span class="built_in">mean</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">sort</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">sortrows</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">size</span>(A)     <span class="comment">% return the dimension of matirx as vector [row colomn]</span></span><br><span class="line">&gt;&gt; <span class="built_in">length</span>(A)   <span class="comment">% return the biggest dimension number of matirx</span></span><br><span class="line">&gt;&gt; <span class="built_in">find</span>(A)     <span class="comment">% find(matrix == key) will return the index of key(column vector if there are duplicate entries)</span></span><br></pre></td></tr></table></figure>
-<p>For example:</p>
-$$
-<span class="math display">\[\begin{aligned}
-M = \left(\begin{array}{cccc} 16 &amp; 2 &amp; 3 &amp; 13\\ 5 &amp; 11
-&amp; 10 &amp; 8\\ 9 &amp; 7 &amp; 6 &amp; 12\\ 4 &amp; 14 &amp; 15
-&amp; 1 \end{array}\right)\\\\
-
-\max(M) = \left(\begin{array}{cccc}16 &amp; 14 &amp; 15 &amp;
-13\end{array} \right)\\\\
-
-\max(\max(M)) = 16\\\\
-
-\mathrm{sum}(M)=\left(\begin{array}{cccc} 34 &amp; 34 &amp; 34 &amp; 34
-\end{array}\right)\\\\
-
-\mathrm{sum}(\mathrm{sum}) = 136
-\end{aligned}\]</span>
-<p>$$</p>
-<p>The <strong>difference</strong> between <code>sort</code> and
-<code>sortrows</code>:</p>
-<p>sort函数会将每一个row的内部进行排序后输出，而sortrows函数则只会比较第一个row，它将每一个column视为整体进行排序：</p>
-<p>For example:</p>
-$$
-<span class="math display">\[\begin{aligned}
-M = \left(\begin{array}{cccc} 16 &amp; 2 &amp; 3 &amp; 13\\ 5 &amp; 11
-&amp; 10 &amp; 8\\ 9 &amp; 7 &amp; 6 &amp; 12\\ 4 &amp; 14 &amp; 15
-&amp; 1 \end{array}\right)\\\\
-
-\mathrm{sort}(M) = \left(\begin{array}{cccc} 4 &amp; 2 &amp; 3 &amp; 1\\
-5 &amp; 7 &amp; 6 &amp; 8\\ 9 &amp; 11 &amp; 10 &amp; 12\\ 16 &amp; 14
-&amp; 15 &amp; 13 \end{array}\right)\\\\
-
-\mathrm{sortrows}(M) = \left(\begin{array}{cccc} 4 &amp; 14 &amp; 15
-&amp; 1\\ 5 &amp; 11 &amp; 10 &amp; 8\\ 9 &amp; 7 &amp; 6 &amp; 12\\ 16
-&amp; 2 &amp; 3 &amp; 13 \end{array}\right)
-\end{aligned}\]</span>
-<p>$$</p>
-<h2 id="words">Words</h2>
-<ol type="1">
-<li>even number: 偶数</li>
-<li>odd number:奇数</li>
-<li>increment</li>
-<li>concat: 合并</li>
-<li>concatenate: 连接，联系的</li>
-<li>semicolon: 分号</li>
-<li><h2 id="broken-key-points">Broken Key Points</h2></li>
-</ol>
-<span class="math display">\[
-e^{x}= 1+ \frac{x}{1!}+ \frac{x^{2}}{2!}+ \frac{x^{3}}{3!}+...
-\]</span> $$
-<span class="math display">\[\begin{aligned}
-
-\end{aligned}\]</span>
-<p>$$</p>
-<ol type="1">
-<li>use <code>latex(variable)</code> to convert matlab expression to
-LaTeX expression.</li>
-<li><code>rem(a,b)</code> will return the remainder of a/b.</li>
-<li><code>prod(array)</code> will return the product of elements in the
-array</li>
-<li><code>clear</code> will delete all varibles in workspace, and
-<code>clear varible name</code> will only delete specific varible in
-workspace</li>
-<li>use <code>tic</code> to start the timer, and use <code>toc</code> to
-stop the timer. <code>tic</code> and <code>toc</code> appear in pairs to
-calculate the time the program runs.</li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/09/MATLAB-01%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%92%8C%E7%9F%A9%E9%98%B5%E8%BE%93%E5%85%A5/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1293,7 +788,7 @@ calculate the time the program runs.</li>
     <link itemprop="mainEntityOfPage" href="https://silver-ray.github.io/2023/10/09/MATLAB-06%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      <meta itemprop="image" content="/themes/img/avatar.jpg">
       <meta itemprop="name" content="Silver Ray">
     </span>
 
@@ -1326,7 +821,7 @@ calculate the time the program runs.</li>
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-10-03 10:00:34" itemprop="dateModified" datetime="2023-10-03T10:00:34+08:00">2023-10-03</time>
+      <time title="修改时间：2023-10-11 17:06:03" itemprop="dateModified" datetime="2023-10-11T17:06:03+08:00">2023-10-11</time>
     </span>
 
   
@@ -1355,56 +850,14 @@ calculate the time the program runs.</li>
     
     <div class="post-body" itemprop="articleBody">
           <h2 id="多项式">多项式</h2>
-<h3
-id="使用matlab表示多项式polynomials">使用MATLAB表示多项式（Polynomials）</h3>
-<p>在MATLAB中，多项式可以用向量表示（row
-vectors），第一位为多项式最高次项系数，最后一项为常数项</p>
-<blockquote>
-<p>[!example]</p>
-</blockquote>
-<blockquote>
-<p><span class="math display">\[
-f(x) = x^{3}-2x-5
-\]</span> 可以用向量 <code>p = [1 0 -2 -5]</code> 表示</p>
-</blockquote>
-<h3 id="多项式求值polyval">多项式求值：<code>polyval()</code></h3>
-<p>使用 <code>polyval(p,x)</code> 计算多项式 <code>p</code> 在
-<code>x</code> 每个点处的值</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">9</span> <span class="number">-5</span> <span class="number">3</span> <span class="number">7</span>]; x = <span class="number">-2</span>:<span class="number">0.01</span>:<span class="number">5</span>;</span><br><span class="line">f = polyval(a,x);</span><br><span class="line"><span class="built_in">plot</span>(x,f,<span class="string">&#x27;LineWidth&#x27;</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
-<h3 id="多项式的乘法conv">多项式的乘法：<code>conv()</code></h3>
-<p>使用<code>conv(p1, p2)</code>函数可以对两个向量p1和p2进行卷积相乘,用于计算多项式的乘法.</p>
-<p>例如多项式 <span class="math inline">\(f(x) =(x^2+1)(2x+7)\)</span>
-，可用下式计算：</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p = conv([<span class="number">1</span> <span class="number">0</span> <span class="number">1</span>], [<span class="number">2</span> <span class="number">7</span>])</span><br><span class="line"><span class="comment">% return p = [2 7 2 7]</span></span><br></pre></td></tr></table></figure>
-<h3
-id="多项式的微分derivativepolyder">多项式的微分（derivative）：<code>polyder()</code></h3>
-<p>使用 <code>polyder(p)</code>
-函数可以计算<strong>多项式</strong>的导数</p>
-<p>配合 <code>polyvar()</code> 可以计算出指定点的微分</p>
-<h3
-id="多项式的积分integrationpolyint">多项式的积分（Integration）：<code>polyint()</code></h3>
-<p>使用 <code>polyint(p, k)</code>
-函数可以计算多项式p的积分,积分结果的常数项设为k。返回值为多项式的向量</p>
-<p>k省略时常数项为0</p>
-<blockquote>
-<p>[!example] <span class="math display">\[f(x) =
-5x^4-2x^2+1\]</span></p>
-</blockquote>
-<p><code>p = polyint([5 0 -2 0 1], 3)</code></p>
-<p>得到 <code>p = [1 0 -0.6667 0 1 3]</code>,表示计算得到如下积分:</p>
-<p><span class="math display">\[\int f(x) dx
-=x^{5}-0.6667x^3+x+3\]</span></p>
-<h2 id="非线性表达式">非线性表达式</h2>
-<h3 id="数值微分">数值微分</h3>
-<h4 id="求差分diffxn">求差分：<code>diff(x,n)</code></h4>
-<p>使用<code>diff(X, n)</code>计算向量<code>X</code>的<code>n</code>阶差分,<code>n</code>默认为<code>1</code>.
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="number">1</span> <span class="number">2</span> <span class="number">5</span> <span class="number">2</span> <span class="number">1</span>];</span><br><span class="line">diff(x);	<span class="comment">% 得到 [1 3 -3 -1]</span></span><br><span class="line">diff(x,<span class="number">1</span>);	<span class="comment">% 得到 [1 3 -3 -1] </span></span><br><span class="line">diff(x,<span class="number">2</span>);	<span class="comment">% 得到 [2 -6 2] 相当于对diff(x,1)的返回值进行差分运算</span></span><br></pre></td></tr></table></figure></p>
-<h4 id="求导数diffy.diffx">求导数：<code>diff(y)./diff(x)</code></h4>
-<p>使用导数的定义：</p>
-<p><span class="math display">\[
-f^{&#39;}(x) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}
-\]</span></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/09/MATLAB-06%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1433,7 +886,7 @@ f^{&#39;}(x) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}
     <link itemprop="mainEntityOfPage" href="https://silver-ray.github.io/2023/10/09/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/....%5Cthemes%5Cimg%5Cavatar.jpg">
+      <meta itemprop="image" content="/themes/img/avatar.jpg">
       <meta itemprop="name" content="Silver Ray">
     </span>
 
@@ -1461,6 +914,13 @@ f^{&#39;}(x) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}
 
       <time title="创建时间：2023-10-09 17:44:06" itemprop="dateCreated datePublished" datetime="2023-10-09T17:44:06+08:00">2023-10-09</time>
     </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-10-11 17:43:23" itemprop="dateModified" datetime="2023-10-11T17:43:23+08:00">2023-10-11</time>
+    </span>
 
   
     <span class="post-meta-break"></span>
@@ -1487,30 +947,15 @@ f^{&#39;}(x) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very
-first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for
-more info. If you get any problems when using Hexo, you can find the
-answer in <a
-target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or
-you can ask me on <a
-target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="quick-start">Quick Start</h2>
-<h3 id="create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a
-target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a
-target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+          <p>这是一些描述</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2023/10/09/hello-world/">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1557,19 +1002,13 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
     <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
     </div>
   </footer>
 
   
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-  <div class="sidebar-dimmer"></div>
   <div class="back-to-top" role="button" aria-label="返回顶部">
     <i class="fa fa-arrow-up fa-lg"></i>
     <span>0%</span>
@@ -1582,9 +1021,12 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
 
   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
 
 
 
