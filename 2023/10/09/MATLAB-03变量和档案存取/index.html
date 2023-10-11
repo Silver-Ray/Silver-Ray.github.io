@@ -19,15 +19,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"silver-ray.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="MATLAB Variables and Data access![[MATLAB3~MATLAB variable.png]]    数值类型 描述    double 双精度浮点数   single 单精度浮点数   int8 8位带符号整数   int16 16位带符号整数   int32 32位带符号整数   int64 64位带符号整数   uint8 8位无符号整数   uint16">
+    <meta name="description" content="MATLAB Variables and Data access [[MATLAB3~MATLAB variable.png]]    数值类型 描述     double 双精度浮点数   single 单精度浮点数   int8 8位带符号整数   int16 16位带符号整数   int32 32位带符号整数   int64">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MATLAB Variables and Data access">
+<meta property="og:title" content="MATLAB-03变量和档案存取">
 <meta property="og:url" content="https://silver-ray.github.io/2023/10/09/MATLAB-03%E5%8F%98%E9%87%8F%E5%92%8C%E6%A1%A3%E6%A1%88%E5%AD%98%E5%8F%96/index.html">
 <meta property="og:site_name" content="Ray的小站">
-<meta property="og:description" content="MATLAB Variables and Data access![[MATLAB3~MATLAB variable.png]]    数值类型 描述    double 双精度浮点数   single 单精度浮点数   int8 8位带符号整数   int16 16位带符号整数   int32 32位带符号整数   int64 64位带符号整数   uint8 8位无符号整数   uint16">
+<meta property="og:description" content="MATLAB Variables and Data access [[MATLAB3~MATLAB variable.png]]    数值类型 描述     double 双精度浮点数   single 单精度浮点数   int8 8位带符号整数   int16 16位带符号整数   int32 32位带符号整数   int64">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-09T12:57:44.600Z">
-<meta property="article:modified_time" content="2023-09-28T05:23:18.597Z">
+<meta property="article:modified_time" content="2023-10-11T08:56:42.422Z">
 <meta property="article:author" content="Silver Ray">
 <meta property="article:tag" content="Notes&#x2F;code">
 <meta property="article:tag" content="matlab">
@@ -38,10 +38,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://silver-ray.github.io/2023/10/09/MATLAB-03%E5%8F%98%E9%87%8F%E5%92%8C%E6%A1%A3%E6%A1%88%E5%AD%98%E5%8F%96/","path":"2023/10/09/MATLAB-03变量和档案存取/","title":"MATLAB Variables and Data access"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://silver-ray.github.io/2023/10/09/MATLAB-03%E5%8F%98%E9%87%8F%E5%92%8C%E6%A1%A3%E6%A1%88%E5%AD%98%E5%8F%96/","path":"2023/10/09/MATLAB-03变量和档案存取/","title":"MATLAB-03变量和档案存取"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>MATLAB Variables and Data access | Ray的小站</title>
+<title>MATLAB-03变量和档案存取 | Ray的小站</title>
   
 
 
@@ -113,7 +113,9 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#MATLAB-Variables-and-Data-access"><span class="nav-number">1.</span> <span class="nav-text">MATLAB Variables and Data access</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Variables"><span class="nav-number">1.1.</span> <span class="nav-text">Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Character-char"><span class="nav-number">1.1.1.</span> <span class="nav-text">Character(char)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String"><span class="nav-number">1.1.2.</span> <span class="nav-text">String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Logic-Operations-and-Assignments"><span class="nav-number">1.1.3.</span> <span class="nav-text">Logic Operations and Assignments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Structure"><span class="nav-number">1.1.4.</span> <span class="nav-text">Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Cell-Array"><span class="nav-number">1.1.5.</span> <span class="nav-text">Cell Array</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Access-Cell-Array"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">Access Cell Array</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#matrix2cell-and-num2cell"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">matrix2cell and num2cell</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Multidimensional-Array"><span class="nav-number">1.1.5.3.</span> <span class="nav-text">Multidimensional Array</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cat"><span class="nav-number">1.1.5.4.</span> <span class="nav-text">cat()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#reshape"><span class="nav-number">1.1.5.5.</span> <span class="nav-text">reshape()</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#File-Access"><span class="nav-number">1.2.</span> <span class="nav-text">File Access</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#MAT-format"><span class="nav-number">1.2.1.</span> <span class="nav-text">MAT format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Excel-File"><span class="nav-number">1.2.2.</span> <span class="nav-text">Excel File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Low-level-File-I-O-Functions"><span class="nav-number">1.2.3.</span> <span class="nav-text">Low-level File I&#x2F;O Functions</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#matlab-variables-and-data-access"><span class="nav-number">1.</span> <span class="nav-text">MATLAB Variables and Data
+access</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#variables"><span class="nav-number">1.1.</span> <span class="nav-text">Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#characterchar"><span class="nav-number">1.1.1.</span> <span class="nav-text">Character(char)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#string"><span class="nav-number">1.1.2.</span> <span class="nav-text">String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#logic-operations-and-assignments"><span class="nav-number">1.1.3.</span> <span class="nav-text">Logic Operations and
+Assignments</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#structure"><span class="nav-number">1.1.4.</span> <span class="nav-text">Structure</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#cell-array"><span class="nav-number">1.1.5.</span> <span class="nav-text">Cell Array</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#access-cell-array"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">Access Cell Array</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#matrix2cell-and-num2cell"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">matrix2cell and num2cell</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#multidimensional-array"><span class="nav-number">1.1.5.3.</span> <span class="nav-text">Multidimensional Array</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#cat"><span class="nav-number">1.1.5.4.</span> <span class="nav-text">cat()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#reshape"><span class="nav-number">1.1.5.5.</span> <span class="nav-text">reshape()</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#file-access"><span class="nav-number">1.2.</span> <span class="nav-text">File Access</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#mat-format"><span class="nav-number">1.2.1.</span> <span class="nav-text">MAT format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#excel-file"><span class="nav-number">1.2.2.</span> <span class="nav-text">Excel File</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#low-level-file-io-functions"><span class="nav-number">1.2.3.</span> <span class="nav-text">Low-level File I&#x2F;O Functions</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -182,12 +184,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="MATLAB Variables and Data access | Ray的小站">
+      <meta itemprop="name" content="MATLAB-03变量和档案存取 | Ray的小站">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          MATLAB Variables and Data access
+          MATLAB-03变量和档案存取
         </h1>
 
         <div class="post-meta-container">
@@ -205,7 +207,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-09-28 13:23:18" itemprop="dateModified" datetime="2023-09-28T13:23:18+08:00">2023-09-28</time>
+      <time title="修改时间：2023-10-11 16:56:42" itemprop="dateModified" datetime="2023-10-11T16:56:42+08:00">2023-10-11</time>
     </span>
 
   
@@ -215,14 +217,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span></span>
+      <span>3k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>NaN:aN</span>
+      <span>5 分钟</span>
     </span>
 </div>
 
@@ -232,204 +234,236 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h1 id="MATLAB-Variables-and-Data-access"><a href="#MATLAB-Variables-and-Data-access" class="headerlink" title="MATLAB Variables and Data access"></a>MATLAB Variables and Data access</h1><p>![[MATLAB3~MATLAB variable.png]]</p>
+    <div class="post-body" itemprop="articleBody"><h1 id="matlab-variables-and-data-access">MATLAB Variables and Data
+access</h1>
+<p>[[MATLAB3~MATLAB variable.png]]</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>数值类型</th>
 <th>描述</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>double</td>
 <td>双精度浮点数</td>
 </tr>
-<tr>
+<tr class="even">
 <td>single</td>
 <td>单精度浮点数</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>int8</td>
 <td>8位带符号整数</td>
 </tr>
-<tr>
+<tr class="even">
 <td>int16</td>
 <td>16位带符号整数</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>int32</td>
 <td>32位带符号整数</td>
 </tr>
-<tr>
+<tr class="even">
 <td>int64</td>
 <td>64位带符号整数</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>uint8</td>
 <td>8位无符号整数</td>
 </tr>
-<tr>
+<tr class="even">
 <td>uint16</td>
 <td>16位无符号整数</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>uint32</td>
 <td>32位无符号整数</td>
 </tr>
-<tr>
+<tr class="even">
 <td>uint64</td>
 <td>64位无符号整数</td>
 </tr>
-</tbody></table>
-<h2 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h2><h3 id="Character-char"><a href="#Character-char" class="headerlink" title="Character(char)"></a>Character(char)</h3><ul>
-<li>A character is represented in ASCII using a numeric code between 0 to 255</li>
-<li>Create a character or a string by putting them into a pair of apostrophe</li>
+</tbody>
+</table>
+<h2 id="variables">Variables</h2>
+<h3 id="characterchar">Character(char)</h3>
+<ul>
+<li>A character is represented in ASCII using a numeric code between 0
+to 255</li>
+<li>Create a character or a string by putting them into a pair of
+apostrophe</li>
 <li>Use <code>uint16()</code> to convert a char to its ASCII code</li>
 </ul>
-<h3 id="String"><a href="#String" class="headerlink" title="String"></a>String</h3><ul>
-<li>An array collects characters:<ul>
-<li><code>s1 = &#39;Example&#39;;</code></li>
-<li><code>s2 = &#39;String&#39;</code></li>
-</ul>
-</li>
-<li>String concatenation:<ul>
+<h3 id="string">String</h3>
+<ul>
+<li>An array collects characters:
+<ul>
+<li><code>s1 = 'Example';</code></li>
+<li><code>s2 = 'String'</code></li>
+</ul></li>
+<li>String concatenation:
+<ul>
 <li><code>s3 = [s1 s2];</code></li>
-<li><code>s4 = [s1; s2];</code> <ul>
-<li>Error: Dimension of matries being concatenated are not consistent</li>
-<li><code>s5 = [s1; s1]</code><ul>
+<li><code>s4 = [s1; s2];</code>
+<ul>
+<li>Error: Dimension of matries being concatenated are not
+consistent</li>
+<li><code>s5 = [s1; s1]</code>
+<ul>
 <li>It works well</li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="Logic-Operations-and-Assignments"><a href="#Logic-Operations-and-Assignments" class="headerlink" title="Logic Operations and Assignments"></a>Logic Operations and Assignments</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">&#x27;aardvark&#x27;</span>;</span><br><span class="line"><span class="string">&#x27;a&#x27;</span> == str				<span class="comment">% return  [1 1 0 0 0 1 0 0]</span></span><br><span class="line">str(str == <span class="string">&#x27;a&#x27;</span>) = <span class="string">&#x27;Z&#x27;</span>	<span class="comment">% return  &#x27;ZZrdvZrk&#x27;  replace &#x27;a&#x27; with &#x27;Z&#x27;</span></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="Structure"><a href="#Structure" class="headerlink" title="Structure"></a>Structure</h3><ul>
+<h3 id="logic-operations-and-assignments">Logic Operations and
+Assignments</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">str = <span class="string">&#x27;aardvark&#x27;</span>;</span><br><span class="line"><span class="string">&#x27;a&#x27;</span> == str				<span class="comment">% return  [1 1 0 0 0 1 0 0]</span></span><br><span class="line">str(str == <span class="string">&#x27;a&#x27;</span>) = <span class="string">&#x27;Z&#x27;</span>	<span class="comment">% return  &#x27;ZZrdvZrk&#x27;  replace &#x27;a&#x27; with &#x27;Z&#x27;</span></span><br></pre></td></tr></table></figure>
+<h3 id="structure">Structure</h3>
+<ul>
 <li>A method of storing heterogeneous data</li>
 <li>Structures contain arrays called fields</li>
 <li>Students assignment grades:</li>
 </ul>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">student.name = <span class="string">&#x27;John Doe&#x27;</span>;</span><br><span class="line">student.id = <span class="string">&#x27;jdo2@sfu.ca&#x27;</span>;</span><br><span class="line">student.number =<span class="number">301073268</span>;</span><br><span class="line">student.grade = [<span class="number">100</span> <span class="number">75</span> <span class="number">73</span>;</span><br><span class="line">				<span class="number">95</span> <span class="number">91</span> <span class="number">85.5</span>;</span><br><span class="line">				<span class="number">100</span> <span class="number">98</span> <span class="number">72</span> ]</span><br><span class="line"></span><br><span class="line">student</span><br></pre></td></tr></table></figure>
-
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th>函数名</th>
 <th>函数作用</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>struct</td>
 <td>创建结构体</td>
 </tr>
-<tr>
+<tr class="even">
 <td>struct2cell</td>
 <td>将结构体转换为元胞数组</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>cell2struct</td>
 <td>将元胞数组转换为结构体</td>
 </tr>
-<tr>
+<tr class="even">
 <td>isstruct</td>
 <td>判断某变量是否是结构体</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>structfun</td>
 <td>对结构体的每个字段都应用某函数</td>
 </tr>
-<tr>
+<tr class="even">
 <td>fieldnames</td>
 <td>获取结构体的所有字段名</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>isfield</td>
 <td>判断结构体是否包含某字段</td>
 </tr>
-<tr>
+<tr class="even">
 <td>getfield</td>
 <td>获取结构体某字段的值</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>setfield</td>
 <td>为结构体中的某字段赋值</td>
 </tr>
-<tr>
+<tr class="even">
 <td>rmfield</td>
 <td>删除结构体中的某字段</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>orderfields</td>
 <td>为结构体字段排序</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <blockquote>
-<p>[!example] </p>
+<p>[!example]</p>
 </blockquote>
 <blockquote>
-<p><code>rmfield(student,&#39;id&#39;)</code></p>
+<p><code>rmfield(student,'id')</code></p>
 </blockquote>
 <p>Nesting Structure</p>
-<h3 id="Cell-Array"><a href="#Cell-Array" class="headerlink" title="Cell Array"></a>Cell Array</h3><ul>
+<h3 id="cell-array">Cell Array</h3>
+<ul>
 <li>Another method of storing heterogeneous data</li>
-<li>Similar to matrix but each entry contains different type of data</li>
+<li>Similar to matrix but each entry contains different type of
+data</li>
 <li>Declared using <code>&#123; &#125;</code></li>
-<li>The two following expressions are the same<ul>
-<li>A{m, n} &#x3D; element;</li>
-<li>A(m ,n) &#x3D;{element};</li>
-</ul>
-</li>
+<li>The two following expressions are the same
+<ul>
+<li>A{m, n} = element;</li>
+<li>A(m ,n) ={element};</li>
+</ul></li>
 <li>Each entry in a cell array hold s a pointer to a data structure</li>
-<li>Different cells of the same cell array can point to different types of data structures</li>
+<li>Different cells of the same cell array can point to different types
+of data structures</li>
 </ul>
-<h4 id="Access-Cell-Array"><a href="#Access-Cell-Array" class="headerlink" title="Access Cell Array"></a>Access Cell Array</h4><ul>
-<li>有两种方式访问元胞数组中的数据,分别是: <strong>单元索引</strong><code>()</code>，和<strong>数组索引</strong><code>&#123;&#125;</code><ul>
+<h4 id="access-cell-array">Access Cell Array</h4>
+<ul>
+<li>有两种方式访问元胞数组中的数据,分别是:
+<strong>单元索引</strong><code>()</code>，和<strong>数组索引</strong><code>&#123;&#125;</code>
+<ul>
 <li>使用单元索引(),我们得到的是一个子元胞数组.</li>
 <li>使用内容索引{},我们得到的是元胞数组对应区域中的内容.</li>
-</ul>
-</li>
+</ul></li>
 </ul>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">A(<span class="number">1</span>,<span class="number">1</span>)=&#123;[<span class="number">1</span> <span class="number">4</span> <span class="number">3</span>; <span class="number">0</span> <span class="number">5</span> <span class="number">8</span>; <span class="number">7</span> <span class="number">2</span> <span class="number">9</span>]&#125;;</span><br><span class="line">A(<span class="number">1</span>,<span class="number">2</span>)=&#123;<span class="string">&#x27;Anne Smith&#x27;</span>&#125;;</span><br><span class="line">A(<span class="number">2</span>,<span class="number">1</span>)=&#123;<span class="number">3</span>+<span class="number">7</span><span class="built_in">i</span>&#125;;</span><br><span class="line">A(<span class="number">2</span>,<span class="number">2</span>)=&#123;-<span class="built_in">pi</span>:<span class="built_in">pi</span>:<span class="built_in">pi</span>&#125;;</span><br><span class="line"></span><br><span class="line">A(<span class="number">1</span>,<span class="number">2</span>) <span class="comment">% 1*1 cell array  &#123;&#x27;Anne Smith&#x27;&#125;</span></span><br><span class="line">A&#123;<span class="number">1</span>,<span class="number">2</span>&#125; <span class="comment">% 1*10 char array &#x27;Anne Smith&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h4 id="matrix2cell-and-num2cell"><a href="#matrix2cell-and-num2cell" class="headerlink" title="matrix2cell and num2cell"></a>matrix2cell and num2cell</h4><p>use <code>help</code> or <code>doc</code></p>
-<h4 id="Multidimensional-Array"><a href="#Multidimensional-Array" class="headerlink" title="Multidimensional Array"></a>Multidimensional Array</h4><p>![[MATLAB3~multidimensional array.png]]</p>
-<h4 id="cat"><a href="#cat" class="headerlink" title="cat()"></a>cat()</h4><p>使用cat函数可以在指定维度上对元胞数组进行拼接(concatenation)</p>
-<p>![[MATLAB3~cat.png]]</p>
-<h4 id="reshape"><a href="#reshape" class="headerlink" title="reshape()"></a>reshape()</h4><p>Create a matrix B from the matrix A below using reshape():</p>
+<h4 id="matrix2cell-and-num2cell">matrix2cell and num2cell</h4>
+<p>use <code>help</code> or <code>doc</code></p>
+<h4 id="multidimensional-array">Multidimensional Array</h4>
+<p>[[MATLAB3~multidimensional array.png]]</p>
+<h4 id="cat">cat()</h4>
+<p>使用cat函数可以在指定维度上对元胞数组进行拼接(concatenation)</p>
+<p>[[MATLAB3~cat.png]]</p>
+<h4 id="reshape">reshape()</h4>
+<p>Create a matrix B from the matrix A below using reshape():</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A = &#123;<span class="string">&#x27;James Bond&#x27;</span>, [<span class="number">1</span> <span class="number">2</span>;<span class="number">3</span> <span class="number">4</span>;<span class="number">5</span> <span class="number">6</span>]; <span class="built_in">pi</span>, <span class="built_in">magic</span>(<span class="number">5</span>)&#125;</span><br><span class="line">C = <span class="built_in">reshape</span>(A,<span class="number">1</span>,<span class="number">4</span>)</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">A = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span>;<span class="number">4</span> <span class="number">5</span> <span class="number">6</span>]</span><br><span class="line">B = <span class="built_in">reshape</span>(A,<span class="number">3</span>,<span class="number">2</span>)</span><br></pre></td></tr></table></figure>
-<p>$$<br>A &#x3D; \left(\begin{array}{ccc} 1 &amp; 2 &amp; 3\ 4 &amp; 5 &amp; 6 \end{array}\right) \Rightarrow B &#x3D; \left(\begin{array}{cc} 1 &amp; 5\ 4 &amp; 3\ 2 &amp; 6 \end{array}\right)<br>$$</p>
-<h2 id="File-Access"><a href="#File-Access" class="headerlink" title="File Access"></a>File Access</h2><h3 id="MAT-format"><a href="#MAT-format" class="headerlink" title="MAT format"></a>MAT format</h3><p>MATLAB工作区里的数据可以以 <code>.mat</code> 格式保存在文件中，使用 <code>save</code> 函数将数据存入文件，使用 <code>load</code> 函数从文件中读取数据</p>
+<p><span class="math display">\[
+A = \left(\begin{array}{ccc} 1 &amp; 2 &amp; 3\\ 4 &amp; 5 &amp; 6
+\end{array}\right) \Rightarrow B = \left(\begin{array}{cc} 1 &amp; 5\\ 4
+&amp; 3\\ 2 &amp; 6 \end{array}\right)
+\]</span></p>
+<h2 id="file-access">File Access</h2>
+<h3 id="mat-format">MAT format</h3>
+<p>MATLAB工作区里的数据可以以 <code>.mat</code> 格式保存在文件中，使用
+<code>save</code> 函数将数据存入文件，使用 <code>load</code>
+函数从文件中读取数据</p>
 <ul>
-<li><code>save</code> 函数的语法如下：<ul>
-<li><code>save(filename， variables)</code> 将变量 <code>variables</code> 以二进制形式存入文件中</li>
-<li><code>save(filename, variables, &#39;-ascii&#39;)</code> 将变量以文本形式存入文件中</li>
-</ul>
-</li>
-<li><code>load</code> 函数的语法如下：<ul>
+<li><code>save</code> 函数的语法如下：
+<ul>
+<li><code>save(filename， variables)</code> 将变量
+<code>variables</code> 以二进制形式存入文件中</li>
+<li><code>save(filename, variables, '-ascii')</code>
+将变量以文本形式存入文件中</li>
+</ul></li>
+<li><code>load</code> 函数的语法如下：
+<ul>
 <li><code>load(filename)</code>从二进制形式文件中读取数据.</li>
-<li><code>load(filename,&#39;-ascii&#39;)</code>从文本形式文件中读取数据.</li>
-</ul>
-</li>
+<li><code>load(filename,'-ascii')</code>从文本形式文件中读取数据.</li>
+</ul></li>
 </ul>
 <p>其中参数filename和variables都是字符串格式,若不指定variables参数,则将当前工作区内所有变量存入文件中.</p>
 <blockquote>
 <p>复杂的数据格式,如struct和cell,不支持以二进制格式存储.</p>
 </blockquote>
-<h3 id="Excel-File"><a href="#Excel-File" class="headerlink" title="Excel File"></a>Excel File</h3><ul>
-<li>读取Excel文件：<code>[num,txt,raw] = xlsread(filename,sheet,xlRange)</code><ul>
+<h3 id="excel-file">Excel File</h3>
+<ul>
+<li>读取Excel文件：<code>[num,txt,raw] = xlsread(filename,sheet,xlRange)</code>
+<ul>
 <li>自动去掉文字部分</li>
+</ul></li>
+<li>写入Excel的语法:
+<code>xlswrite(filename,A,sheet,xlRange)</code></li>
+<li>同时读取文本和数字可以使用以下操作：<code>[Score Header] = xlsread('score.xlsx')</code></li>
 </ul>
-</li>
-<li>写入Excel的语法: <code>xlswrite(filename,A,sheet,xlRange)</code></li>
-<li>同时读取文本和数字可以使用以下操作：<code>[Score Header] = xlsread(&#39;score.xlsx&#39;)</code></li>
-</ul>
-<h3 id="Low-level-File-I-O-Functions"><a href="#Low-level-File-I-O-Functions" class="headerlink" title="Low-level File I&#x2F;O Functions"></a>Low-level File I&#x2F;O Functions</h3><p>同C语言的文件I&#x2F;O</p>
+<h3 id="low-level-file-io-functions">Low-level File I/O Functions</h3>
+<p>同C语言的文件I/O</p>
 <p>使用 <code>type filename</code> 可以打印出文本的内容</p>
 
     </div>
@@ -486,13 +520,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">12k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动

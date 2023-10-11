@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"silver-ray.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="不声明时默认的类型时double Special Variables and Constants ans  i, j : complex number  Inf : ∞  eps : epsilon, 2.2204e-16  NaN : not a number  pi : π  To list Keywords:  &gt;&gt; iskeyword    Array(Vector and M">
+    <meta name="description" content="不声明时默认的类型时double Special Variables and Constants  ans i, j : complex number Inf : ∞ eps : epsilon, 2.2204e-16 NaN : not a number pi : π To list Keywords:  &gt;&gt; iskeyword   Array(Vec">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MATLAB-01基本操作和矩阵输入">
 <meta property="og:url" content="https://silver-ray.github.io/2023/10/09/MATLAB-01%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C%E5%92%8C%E7%9F%A9%E9%98%B5%E8%BE%93%E5%85%A5/index.html">
 <meta property="og:site_name" content="Ray的小站">
-<meta property="og:description" content="不声明时默认的类型时double Special Variables and Constants ans  i, j : complex number  Inf : ∞  eps : epsilon, 2.2204e-16  NaN : not a number  pi : π  To list Keywords:  &gt;&gt; iskeyword    Array(Vector and M">
+<meta property="og:description" content="不声明时默认的类型时double Special Variables and Constants  ans i, j : complex number Inf : ∞ eps : epsilon, 2.2204e-16 NaN : not a number pi : π To list Keywords:  &gt;&gt; iskeyword   Array(Vec">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-09T12:57:44.595Z">
 <meta property="article:modified_time" content="2023-09-28T05:23:18.606Z">
@@ -113,7 +113,8 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Special-Variables-and-Constants"><span class="nav-number">1.</span> <span class="nav-text">Special Variables and Constants</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array-Vector-and-Matrix"><span class="nav-number">2.</span> <span class="nav-text">Array(Vector and Matrix)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Array-Indexing"><span class="nav-number">2.1.</span> <span class="nav-text">Array Indexing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Colon-Operator"><span class="nav-number">2.2.</span> <span class="nav-text">Colon Operator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Array-Concatenation"><span class="nav-number">2.3.</span> <span class="nav-text">Array Concatenation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Array-Manipulation"><span class="nav-number">2.4.</span> <span class="nav-text">Array Manipulation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Some-Special-Matrix"><span class="nav-number">2.5.</span> <span class="nav-text">Some Special Matrix</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Some-Matrix-Function"><span class="nav-number">2.6.</span> <span class="nav-text">Some Matrix Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Words"><span class="nav-number">3.</span> <span class="nav-text">Words</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Broken-Key-Points"><span class="nav-number">4.</span> <span class="nav-text">Broken Key Points</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#special-variables-and-constants"><span class="nav-number">1.</span> <span class="nav-text">Special Variables and
+Constants</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#arrayvector-and-matrix"><span class="nav-number">2.</span> <span class="nav-text">Array(Vector and Matrix)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#array-indexing"><span class="nav-number">2.1.</span> <span class="nav-text">Array Indexing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#colon-operator"><span class="nav-number">2.2.</span> <span class="nav-text">Colon Operator</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-concatenation"><span class="nav-number">2.3.</span> <span class="nav-text">Array Concatenation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#array-manipulation"><span class="nav-number">2.4.</span> <span class="nav-text">Array Manipulation</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#some-special-matrix"><span class="nav-number">2.5.</span> <span class="nav-text">Some Special Matrix</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#some-matrix-function"><span class="nav-number">2.6.</span> <span class="nav-text">Some Matrix Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#words"><span class="nav-number">3.</span> <span class="nav-text">Words</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#broken-key-points"><span class="nav-number">4.</span> <span class="nav-text">Broken Key Points</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -215,14 +216,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span></span>
+      <span>3.6k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>NaN:aN</span>
+      <span>7 分钟</span>
     </span>
 </div>
 
@@ -233,101 +234,147 @@
     
     
     <div class="post-body" itemprop="articleBody"><p>不声明时默认的类型时double</p>
-<h2 id="Special-Variables-and-Constants"><a href="#Special-Variables-and-Constants" class="headerlink" title="Special Variables and Constants"></a>Special Variables and Constants</h2><ul>
-<li><p>ans</p>
-</li>
-<li><p>i, j : complex number</p>
-</li>
-<li><p>Inf : ∞</p>
-</li>
-<li><p>eps : epsilon, 2.2204e-16</p>
-</li>
-<li><p>NaN : not a number</p>
-</li>
-<li><p>pi : π</p>
-</li>
+<h2 id="special-variables-and-constants">Special Variables and
+Constants</h2>
+<ul>
+<li><p>ans</p></li>
+<li><p>i, j : complex number</p></li>
+<li><p>Inf : ∞</p></li>
+<li><p>eps : epsilon, 2.2204e-16</p></li>
+<li><p>NaN : not a number</p></li>
+<li><p>pi : π</p></li>
 <li><p>To list Keywords:</p>
 <ul>
 <li>&gt;&gt; iskeyword</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="Array-Vector-and-Matrix"><a href="#Array-Vector-and-Matrix" class="headerlink" title="Array(Vector and Matrix)"></a>Array(Vector and Matrix)</h2><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Row vector:</span><br><span class="line">	&gt;&gt; a = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span>]</span><br><span class="line">	</span><br><span class="line">Column vector:</span><br><span class="line">	&gt;&gt; b = [<span class="number">1</span>; <span class="number">2</span>; <span class="number">3</span>; <span class="number">4</span>]</span><br><span class="line">	</span><br><span class="line">Try:</span><br><span class="line">	&gt;&gt; a*b</span><br><span class="line">	&gt;&gt; b*a</span><br></pre></td></tr></table></figure>
-
-<p>Output: </p>
-<p>$$<br>a*b&#x3D;30<br>$$</p>
-<p>$$<br>b*a &#x3D;\left(\begin{array}{cccc}<br>1 &amp; 2 &amp; 3 &amp; 4\<br>2 &amp; 4 &amp; 6 &amp; 8\<br>3 &amp; 6 &amp; 9 &amp; 12\<br>4 &amp; 8 &amp; 12 &amp; 16<br>\end{array}\right)<br>$$</p>
+<h2 id="arrayvector-and-matrix">Array(Vector and Matrix)</h2>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Row vector:</span><br><span class="line">	&gt;&gt; a = [<span class="number">1</span> <span class="number">2</span> <span class="number">3</span> <span class="number">4</span>]</span><br><span class="line">	</span><br><span class="line">Column vector:</span><br><span class="line">	&gt;&gt; b = [<span class="number">1</span>; <span class="number">2</span>; <span class="number">3</span>; <span class="number">4</span>]</span><br><span class="line">	</span><br><span class="line">Try:</span><br><span class="line">	&gt;&gt; a*b</span><br><span class="line">	&gt;&gt; b*a</span><br></pre></td></tr></table></figure>
+<p>Output:</p>
+<p><span class="math display">\[
+a*b=30
+\]</span></p>
+<p><span class="math display">\[
+b*a =\left(\begin{array}{cccc}
+1 &amp; 2 &amp; 3 &amp; 4\\
+2 &amp; 4 &amp; 6 &amp; 8\\
+3 &amp; 6 &amp; 9 &amp; 12\\
+4 &amp; 8 &amp; 12 &amp; 16
+\end{array}\right)
+\]</span></p>
 <p>用空格(space)隔开行元素，用分号(semicolon)隔开不同的列元素</p>
-<h3 id="Array-Indexing"><a href="#Array-Indexing" class="headerlink" title="Array Indexing"></a>Array Indexing</h3><ol>
+<h3 id="array-indexing">Array Indexing</h3>
+<ol type="1">
 <li>A(n): 取出矩阵的第n个元素（MATLAB采用列优先）</li>
-<li>A(row, column):  取出矩阵第row行第column列的元素</li>
-<li>A(Matrix or Vector): 使用矩阵或者向量的值索引，返回一个按原方式排列的矩阵或向量</li>
-<li>A(row vector, column vector): 使用第一个向量作为行数，第二个向量作为列数，取二者交叉元素</li>
+<li>A(row, column): 取出矩阵第row行第column列的元素</li>
+<li>A(Matrix or Vector):
+使用矩阵或者向量的值索引，返回一个按原方式排列的矩阵或向量</li>
+<li>A(row vector, column vector):
+使用第一个向量作为行数，第二个向量作为列数，取二者交叉元素</li>
 </ol>
-<h3 id="Colon-Operator"><a href="#Colon-Operator" class="headerlink" title="Colon Operator"></a>Colon Operator</h3><p>create a array: <code>start: step: stop</code>, different from pyton: <code>range(start, stop, step)</code></p>
+<h3 id="colon-operator">Colon Operator</h3>
+<p>create a array: <code>start: step: stop</code>, different from pyton:
+<code>range(start, stop, step)</code></p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; B = <span class="number">1</span>:<span class="number">5</span></span><br><span class="line">&gt;&gt; B = <span class="number">1</span>:<span class="number">2</span>:<span class="number">5</span></span><br><span class="line">&gt;&gt; B = [<span class="number">1</span>:<span class="number">5</span>; <span class="number">2</span>:<span class="number">3</span>:<span class="number">15</span>; <span class="number">-2</span>:<span class="number">0.5</span>:<span class="number">0</span>]</span><br><span class="line">&gt;&gt; str = <span class="string">&#x27;a&#x27;</span>:<span class="number">2</span>:<span class="string">&#x27;z&#x27;</span></span><br></pre></td></tr></table></figure>
-
 <p>使用冒号运算符清空矩阵中的某一行或者某一列：</p>
 <p><code>A(3,:) = []</code>: 清空第三行，这里的[ ]表示empty</p>
-<h3 id="Array-Concatenation"><a href="#Array-Concatenation" class="headerlink" title="Array Concatenation"></a>Array Concatenation</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; A = [<span class="number">1</span> <span class="number">2</span>; <span class="number">3</span> <span class="number">4</span>];</span><br><span class="line">&gt;&gt; B = [<span class="number">9</span> <span class="number">9</span>; <span class="number">9</span> <span class="number">9</span>];</span><br><span class="line">&gt;&gt; C = [A B]</span><br><span class="line">&gt;&gt; D = [A;B]</span><br></pre></td></tr></table></figure>
-
+<h3 id="array-concatenation">Array Concatenation</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; A = [<span class="number">1</span> <span class="number">2</span>; <span class="number">3</span> <span class="number">4</span>];</span><br><span class="line">&gt;&gt; B = [<span class="number">9</span> <span class="number">9</span>; <span class="number">9</span> <span class="number">9</span>];</span><br><span class="line">&gt;&gt; C = [A B]</span><br><span class="line">&gt;&gt; D = [A;B]</span><br></pre></td></tr></table></figure>
 <p>Output:</p>
-<p>$$<br>A &#x3D; \left(\begin{array}{cc} 1 &amp; 2\ 3 &amp; 4 \end{array}\right)\<br>B &#x3D; \left(\begin{array}{cc} 9 &amp; 9\ 9 &amp; 9 \end{array}\right)\<br>C &#x3D; \left(\begin{array}{cccc} 1 &amp; 2 &amp; 9 &amp; 9\ 3 &amp; 4 &amp; 9 &amp; 9 \end{array}\right)\<br>D &#x3D; \left(\begin{array}{cc} 1 &amp; 2\ 3 &amp; 4\ 9 &amp; 9\ 9 &amp; 9 \end{array}\right)<br>$$</p>
-<h3 id="Array-Manipulation"><a href="#Array-Manipulation" class="headerlink" title="Array Manipulation"></a>Array Manipulation</h3><p>Operators on array: <code>+</code> <code>-</code> <code>*</code>  <code>/</code> <code>^</code> <code>.</code> <code>&#39;</code> </p>
+<p><span class="math display">\[
+A = \left(\begin{array}{cc} 1 &amp; 2\\ 3 &amp; 4 \end{array}\right)\\
+B = \left(\begin{array}{cc} 9 &amp; 9\\ 9 &amp; 9 \end{array}\right)\\
+C = \left(\begin{array}{cccc} 1 &amp; 2 &amp; 9 &amp; 9\\ 3 &amp; 4
+&amp; 9 &amp; 9 \end{array}\right)\\
+D = \left(\begin{array}{cc} 1 &amp; 2\\ 3 &amp; 4\\ 9 &amp; 9\\ 9 &amp;
+9 \end{array}\right)
+\]</span></p>
+<h3 id="array-manipulation">Array Manipulation</h3>
+<p>Operators on array: <code>+</code> <code>-</code> <code>*</code>
+<code>/</code> <code>^</code> <code>.</code> <code>'</code></p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; A+B    <span class="comment">%对应的每个元素(entry)相加</span></span><br><span class="line">&gt;&gt; A*B    <span class="comment">%矩阵做乘法</span></span><br><span class="line">&gt;&gt; A.*B   <span class="comment">%矩阵的对应元素(entry)相乘</span></span><br><span class="line">&gt;&gt; A/B    <span class="comment">%A乘以B的逆矩阵(inverse matirx)</span></span><br><span class="line">&gt;&gt; A/B    <span class="comment">%A和B的每个对应元素相除</span></span><br><span class="line">&gt;&gt; A&#x27;     <span class="comment">%转置(transpose) B矩阵</span></span><br></pre></td></tr></table></figure>
-
 <p>注意：当a为数值时，A.*a和A*a相同，A.\a和A\a相同，但是A^a和A.^a不同</p>
-<h3 id="Some-Special-Matrix"><a href="#Some-Special-Matrix" class="headerlink" title="Some Special Matrix"></a>Some Special Matrix</h3><ul>
-<li><p><code>linspace()</code>: linearly spaced vectors</p>
+<h3 id="some-special-matrix">Some Special Matrix</h3>
+<ul>
+<li><code>linspace()</code>: linearly spaced vectors
 <ul>
 <li><code>linspace(start, stop, number)</code></li>
+</ul></li>
+<li><code>eys()</code>: n*n identity matrix</li>
+<li><code>zeros(n1, n2)</code>: n1*n2 zero matrix</li>
+<li><code>ones(n1, n2)</code>: n1*n2 matrix with every entry as 1</li>
+<li><code>diag()</code>: diagonal matrix</li>
+<li><code>rand()</code>: uniformly distributed random numbers</li>
 </ul>
-</li>
-<li><p><code>eys()</code>: n*n identity matrix</p>
-</li>
-<li><p><code>zeros(n1, n2)</code>: n1*n2 zero matrix</p>
-</li>
-<li><p><code>ones(n1, n2)</code>: n1*n2 matrix with every entry as 1</p>
-</li>
-<li><p><code>diag()</code>: diagonal matrix</p>
-</li>
-<li><p><code>rand()</code>: uniformly distributed random numbers</p>
-</li>
-</ul>
-<h3 id="Some-Matrix-Function"><a href="#Some-Matrix-Function" class="headerlink" title="Some Matrix Function"></a>Some Matrix Function</h3><p>column width function</p>
+<h3 id="some-matrix-function">Some Matrix Function</h3>
+<p>column width function</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt; <span class="built_in">max</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">max</span>(<span class="built_in">max</span>(A))</span><br><span class="line">&gt;&gt; <span class="built_in">min</span>(A)</span><br><span class="line">&gt;&gt; sum(A)</span><br><span class="line">&gt;&gt; <span class="built_in">mean</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">sort</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">sortrows</span>(A)</span><br><span class="line">&gt;&gt; <span class="built_in">size</span>(A)     <span class="comment">% return the dimension of matirx as vector [row colomn]</span></span><br><span class="line">&gt;&gt; <span class="built_in">length</span>(A)   <span class="comment">% return the biggest dimension number of matirx</span></span><br><span class="line">&gt;&gt; <span class="built_in">find</span>(A)     <span class="comment">% find(matrix == key) will return the index of key(column vector if there are duplicate entries)</span></span><br></pre></td></tr></table></figure>
-
 <p>For example:</p>
-<p>$$<br>\begin{aligned}<br>M &#x3D; \left(\begin{array}{cccc} 16 &amp; 2 &amp; 3 &amp; 13\ 5 &amp; 11 &amp; 10 &amp; 8\ 9 &amp; 7 &amp; 6 &amp; 12\ 4 &amp; 14 &amp; 15 &amp; 1 \end{array}\right)\\</p>
-<p>\max(M) &#x3D; \left(\begin{array}{cccc}16 &amp; 14 &amp; 15 &amp; 13\end{array} \right)\\</p>
-<p>\max(\max(M)) &#x3D; 16\\</p>
-<p>\mathrm{sum}(M)&#x3D;\left(\begin{array}{cccc} 34 &amp; 34 &amp; 34 &amp; 34 \end{array}\right)\\</p>
-<p>\mathrm{sum}(\mathrm{sum}) &#x3D; 136<br>\end{aligned}</p>
+$$
+<span class="math display">\[\begin{aligned}
+M = \left(\begin{array}{cccc} 16 &amp; 2 &amp; 3 &amp; 13\\ 5 &amp; 11
+&amp; 10 &amp; 8\\ 9 &amp; 7 &amp; 6 &amp; 12\\ 4 &amp; 14 &amp; 15
+&amp; 1 \end{array}\right)\\\\
+
+\max(M) = \left(\begin{array}{cccc}16 &amp; 14 &amp; 15 &amp;
+13\end{array} \right)\\\\
+
+\max(\max(M)) = 16\\\\
+
+\mathrm{sum}(M)=\left(\begin{array}{cccc} 34 &amp; 34 &amp; 34 &amp; 34
+\end{array}\right)\\\\
+
+\mathrm{sum}(\mathrm{sum}) = 136
+\end{aligned}\]</span>
 <p>$$</p>
-<p>The <strong>difference</strong> between <code>sort</code> and <code>sortrows</code>:</p>
+<p>The <strong>difference</strong> between <code>sort</code> and
+<code>sortrows</code>:</p>
 <p>sort函数会将每一个row的内部进行排序后输出，而sortrows函数则只会比较第一个row，它将每一个column视为整体进行排序：</p>
 <p>For example:</p>
-<p>$$<br>\begin{aligned}<br>M &#x3D; \left(\begin{array}{cccc} 16 &amp; 2 &amp; 3 &amp; 13\ 5 &amp; 11 &amp; 10 &amp; 8\ 9 &amp; 7 &amp; 6 &amp; 12\ 4 &amp; 14 &amp; 15 &amp; 1 \end{array}\right)\\</p>
-<p>\mathrm{sort}(M) &#x3D; \left(\begin{array}{cccc} 4 &amp; 2 &amp; 3 &amp; 1\ 5 &amp; 7 &amp; 6 &amp; 8\ 9 &amp; 11 &amp; 10 &amp; 12\ 16 &amp; 14 &amp; 15 &amp; 13 \end{array}\right)\\</p>
-<p>\mathrm{sortrows}(M) &#x3D; \left(\begin{array}{cccc} 4 &amp; 14 &amp; 15 &amp; 1\ 5 &amp; 11 &amp; 10 &amp; 8\ 9 &amp; 7 &amp; 6 &amp; 12\ 16 &amp; 2 &amp; 3 &amp; 13 \end{array}\right)<br>\end{aligned}<br>$$</p>
-<h2 id="Words"><a href="#Words" class="headerlink" title="Words"></a>Words</h2><ol>
+$$
+<span class="math display">\[\begin{aligned}
+M = \left(\begin{array}{cccc} 16 &amp; 2 &amp; 3 &amp; 13\\ 5 &amp; 11
+&amp; 10 &amp; 8\\ 9 &amp; 7 &amp; 6 &amp; 12\\ 4 &amp; 14 &amp; 15
+&amp; 1 \end{array}\right)\\\\
+
+\mathrm{sort}(M) = \left(\begin{array}{cccc} 4 &amp; 2 &amp; 3 &amp; 1\\
+5 &amp; 7 &amp; 6 &amp; 8\\ 9 &amp; 11 &amp; 10 &amp; 12\\ 16 &amp; 14
+&amp; 15 &amp; 13 \end{array}\right)\\\\
+
+\mathrm{sortrows}(M) = \left(\begin{array}{cccc} 4 &amp; 14 &amp; 15
+&amp; 1\\ 5 &amp; 11 &amp; 10 &amp; 8\\ 9 &amp; 7 &amp; 6 &amp; 12\\ 16
+&amp; 2 &amp; 3 &amp; 13 \end{array}\right)
+\end{aligned}\]</span>
+<p>$$</p>
+<h2 id="words">Words</h2>
+<ol type="1">
 <li>even number: 偶数</li>
 <li>odd number:奇数</li>
 <li>increment</li>
 <li>concat: 合并</li>
 <li>concatenate: 连接，联系的</li>
 <li>semicolon: 分号</li>
-<li></li>
+<li><h2 id="broken-key-points">Broken Key Points</h2></li>
 </ol>
-<h2 id="Broken-Key-Points"><a href="#Broken-Key-Points" class="headerlink" title="Broken Key Points"></a>Broken Key Points</h2><p>$$<br>e^{x}&#x3D; 1+ \frac{x}{1!}+ \frac{x^{2}}{2!}+ \frac{x^{3}}{3!}+…<br>$$<br>$$<br>\begin{aligned}</p>
-<p>\end{aligned}</p>
+<span class="math display">\[
+e^{x}= 1+ \frac{x}{1!}+ \frac{x^{2}}{2!}+ \frac{x^{3}}{3!}+...
+\]</span> $$
+<span class="math display">\[\begin{aligned}
+
+\end{aligned}\]</span>
 <p>$$</p>
-<ol>
-<li>use <code>latex(variable)</code> to convert matlab expression to LaTeX expression.</li>
-<li><code>rem(a,b)</code> will return the remainder of a&#x2F;b.</li>
-<li><code>prod(array)</code> will return the product of elements in the array</li>
-<li><code>clear</code> will delete all varibles in workspace, and <code>clear varible name</code> will only delete specific varible in workspace</li>
-<li>use  <code>tic</code> to start the timer, and use <code>toc</code>  to stop the timer. <code>tic</code> and <code>toc</code> appear in pairs to calculate the time the program runs.</li>
+<ol type="1">
+<li>use <code>latex(variable)</code> to convert matlab expression to
+LaTeX expression.</li>
+<li><code>rem(a,b)</code> will return the remainder of a/b.</li>
+<li><code>prod(array)</code> will return the product of elements in the
+array</li>
+<li><code>clear</code> will delete all varibles in workspace, and
+<code>clear varible name</code> will only delete specific varible in
+workspace</li>
+<li>use <code>tic</code> to start the timer, and use <code>toc</code> to
+stop the timer. <code>tic</code> and <code>toc</code> appear in pairs to
+calculate the time the program runs.</li>
 </ol>
 
     </div>
@@ -384,13 +431,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">12k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动

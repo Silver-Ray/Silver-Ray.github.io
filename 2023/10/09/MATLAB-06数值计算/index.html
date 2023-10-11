@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"silver-ray.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="多项式使用MATLAB表示多项式（Polynomials）在MATLAB中，多项式可以用向量表示（row vectors），第一位为多项式最高次项系数，最后一项为常数项  [!example]    $$f(x) &#x3D; x^{3}-2x-5$$可以用向量 p &#x3D; [1 0 -2 -5] 表示  多项式求值：polyval()使用 polyval(p,x) 计算多项式 p 在 x 每个点处的">
+    <meta name="description" content="多项式 使用MATLAB表示多项式（Polynomials） 在MATLAB中，多项式可以用向量表示（row vectors），第一位为多项式最高次项系数，最后一项为常数项  [!example]   \[ f(x) &#x3D; x^{3}-2x-5 \] 可以用向量 p &#x3D; [1 0 -2 -5] 表示  多项式求值：polyval() 使用 polyval(p,x) 计算多项">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MATLAB-06数值计算">
 <meta property="og:url" content="https://silver-ray.github.io/2023/10/09/MATLAB-06%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97/index.html">
 <meta property="og:site_name" content="Ray的小站">
-<meta property="og:description" content="多项式使用MATLAB表示多项式（Polynomials）在MATLAB中，多项式可以用向量表示（row vectors），第一位为多项式最高次项系数，最后一项为常数项  [!example]    $$f(x) &#x3D; x^{3}-2x-5$$可以用向量 p &#x3D; [1 0 -2 -5] 表示  多项式求值：polyval()使用 polyval(p,x) 计算多项式 p 在 x 每个点处的">
+<meta property="og:description" content="多项式 使用MATLAB表示多项式（Polynomials） 在MATLAB中，多项式可以用向量表示（row vectors），第一位为多项式最高次项系数，最后一项为常数项  [!example]   \[ f(x) &#x3D; x^{3}-2x-5 \] 可以用向量 p &#x3D; [1 0 -2 -5] 表示  多项式求值：polyval() 使用 polyval(p,x) 计算多项">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-09T12:57:44.589Z">
 <meta property="article:modified_time" content="2023-10-03T02:00:34.800Z">
@@ -113,7 +113,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">多项式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8MATLAB%E8%A1%A8%E7%A4%BA%E5%A4%9A%E9%A1%B9%E5%BC%8F%EF%BC%88Polynomials%EF%BC%89"><span class="nav-number">1.1.</span> <span class="nav-text">使用MATLAB表示多项式（Polynomials）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%B1%82%E5%80%BC%EF%BC%9Apolyval"><span class="nav-number">1.2.</span> <span class="nav-text">多项式求值：polyval()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E4%B9%98%E6%B3%95%EF%BC%9Aconv"><span class="nav-number">1.3.</span> <span class="nav-text">多项式的乘法：conv()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E5%BE%AE%E5%88%86%EF%BC%88derivative%EF%BC%89%EF%BC%9Apolyder"><span class="nav-number">1.4.</span> <span class="nav-text">多项式的微分（derivative）：polyder()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E7%A7%AF%E5%88%86%EF%BC%88Integration%EF%BC%89%EF%BC%9Apolyint"><span class="nav-number">1.5.</span> <span class="nav-text">多项式的积分（Integration）：polyint()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E7%BA%BF%E6%80%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">非线性表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E5%BE%AE%E5%88%86"><span class="nav-number">2.1.</span> <span class="nav-text">数值微分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B1%82%E5%B7%AE%E5%88%86%EF%BC%9Adiff-x-n"><span class="nav-number">2.1.1.</span> <span class="nav-text">求差分：diff(x,n)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B1%82%E5%AF%BC%E6%95%B0%EF%BC%9Adiff-y-diff-x"><span class="nav-number">2.1.2.</span> <span class="nav-text">求导数：diff(y).&#x2F;diff(x)</span></a></li></ol></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F"><span class="nav-number">1.</span> <span class="nav-text">多项式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8matlab%E8%A1%A8%E7%A4%BA%E5%A4%9A%E9%A1%B9%E5%BC%8Fpolynomials"><span class="nav-number">1.1.</span> <span class="nav-text">使用MATLAB表示多项式（Polynomials）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%B1%82%E5%80%BCpolyval"><span class="nav-number">1.2.</span> <span class="nav-text">多项式求值：polyval()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E4%B9%98%E6%B3%95conv"><span class="nav-number">1.3.</span> <span class="nav-text">多项式的乘法：conv()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E5%BE%AE%E5%88%86derivativepolyder"><span class="nav-number">1.4.</span> <span class="nav-text">多项式的微分（derivative）：polyder()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%9A%E9%A1%B9%E5%BC%8F%E7%9A%84%E7%A7%AF%E5%88%86integrationpolyint"><span class="nav-number">1.5.</span> <span class="nav-text">多项式的积分（Integration）：polyint()</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%9E%E7%BA%BF%E6%80%A7%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">2.</span> <span class="nav-text">非线性表达式</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E5%80%BC%E5%BE%AE%E5%88%86"><span class="nav-number">2.1.</span> <span class="nav-text">数值微分</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B1%82%E5%B7%AE%E5%88%86diffxn"><span class="nav-number">2.1.1.</span> <span class="nav-text">求差分：diff(x,n)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B1%82%E5%AF%BC%E6%95%B0diffy.diffx"><span class="nav-number">2.1.2.</span> <span class="nav-text">求导数：diff(y).&#x2F;diff(x)</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -215,14 +215,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span></span>
+      <span>880</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>NaN:aN</span>
+      <span>2 分钟</span>
     </span>
 </div>
 
@@ -232,34 +232,56 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h2><h3 id="使用MATLAB表示多项式（Polynomials）"><a href="#使用MATLAB表示多项式（Polynomials）" class="headerlink" title="使用MATLAB表示多项式（Polynomials）"></a>使用MATLAB表示多项式（Polynomials）</h3><p>在MATLAB中，多项式可以用向量表示（row vectors），第一位为多项式最高次项系数，最后一项为常数项</p>
+    <div class="post-body" itemprop="articleBody"><h2 id="多项式">多项式</h2>
+<h3
+id="使用matlab表示多项式polynomials">使用MATLAB表示多项式（Polynomials）</h3>
+<p>在MATLAB中，多项式可以用向量表示（row
+vectors），第一位为多项式最高次项系数，最后一项为常数项</p>
 <blockquote>
-<p>[!example] </p>
+<p>[!example]</p>
 </blockquote>
 <blockquote>
-<p>$$<br>f(x) &#x3D; x^{3}-2x-5<br>$$<br>可以用向量 <code>p = [1 0 -2 -5]</code> 表示</p>
+<p><span class="math display">\[
+f(x) = x^{3}-2x-5
+\]</span> 可以用向量 <code>p = [1 0 -2 -5]</code> 表示</p>
 </blockquote>
-<h3 id="多项式求值：polyval"><a href="#多项式求值：polyval" class="headerlink" title="多项式求值：polyval()"></a>多项式求值：<code>polyval()</code></h3><p>使用 <code>polyval(p,x)</code> 计算多项式 <code>p</code> 在 <code>x</code> 每个点处的值</p>
+<h3 id="多项式求值polyval">多项式求值：<code>polyval()</code></h3>
+<p>使用 <code>polyval(p,x)</code> 计算多项式 <code>p</code> 在
+<code>x</code> 每个点处的值</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a = [<span class="number">9</span> <span class="number">-5</span> <span class="number">3</span> <span class="number">7</span>]; x = <span class="number">-2</span>:<span class="number">0.01</span>:<span class="number">5</span>;</span><br><span class="line">f = polyval(a,x);</span><br><span class="line"><span class="built_in">plot</span>(x,f,<span class="string">&#x27;LineWidth&#x27;</span>,<span class="number">2</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="多项式的乘法：conv"><a href="#多项式的乘法：conv" class="headerlink" title="多项式的乘法：conv()"></a>多项式的乘法：<code>conv()</code></h3><p>使用<code>conv(p1, p2)</code>函数可以对两个向量p1和p2进行卷积相乘,用于计算多项式的乘法.</p>
-<p>例如多项式 $f(x) &#x3D;(x^2+1)(2x+7)$ ，可用下式计算：</p>
+<h3 id="多项式的乘法conv">多项式的乘法：<code>conv()</code></h3>
+<p>使用<code>conv(p1, p2)</code>函数可以对两个向量p1和p2进行卷积相乘,用于计算多项式的乘法.</p>
+<p>例如多项式 <span class="math inline">\(f(x) =(x^2+1)(2x+7)\)</span>
+，可用下式计算：</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p = conv([<span class="number">1</span> <span class="number">0</span> <span class="number">1</span>], [<span class="number">2</span> <span class="number">7</span>])</span><br><span class="line"><span class="comment">% return p = [2 7 2 7]</span></span><br></pre></td></tr></table></figure>
-<h3 id="多项式的微分（derivative）：polyder"><a href="#多项式的微分（derivative）：polyder" class="headerlink" title="多项式的微分（derivative）：polyder()"></a>多项式的微分（derivative）：<code>polyder()</code></h3><p>使用 <code>polyder(p)</code> 函数可以计算<strong>多项式</strong>的导数</p>
+<h3
+id="多项式的微分derivativepolyder">多项式的微分（derivative）：<code>polyder()</code></h3>
+<p>使用 <code>polyder(p)</code>
+函数可以计算<strong>多项式</strong>的导数</p>
 <p>配合 <code>polyvar()</code> 可以计算出指定点的微分</p>
-<h3 id="多项式的积分（Integration）：polyint"><a href="#多项式的积分（Integration）：polyint" class="headerlink" title="多项式的积分（Integration）：polyint()"></a>多项式的积分（Integration）：<code>polyint()</code></h3><p>使用 <code>polyint(p, k)</code> 函数可以计算多项式p的积分,积分结果的常数项设为k。返回值为多项式的向量</p>
+<h3
+id="多项式的积分integrationpolyint">多项式的积分（Integration）：<code>polyint()</code></h3>
+<p>使用 <code>polyint(p, k)</code>
+函数可以计算多项式p的积分,积分结果的常数项设为k。返回值为多项式的向量</p>
 <p>k省略时常数项为0</p>
 <blockquote>
-<p>[!example]<br>$$f(x) &#x3D; 5x^4-2x^2+1$$</p>
+<p>[!example] <span class="math display">\[f(x) =
+5x^4-2x^2+1\]</span></p>
 </blockquote>
 <p><code>p = polyint([5 0 -2 0 1], 3)</code></p>
 <p>得到 <code>p = [1 0 -0.6667 0 1 3]</code>,表示计算得到如下积分:</p>
-<p>$$\int f(x) dx &#x3D;x^{5}-0.6667x^3+x+3$$</p>
-<h2 id="非线性表达式"><a href="#非线性表达式" class="headerlink" title="非线性表达式"></a>非线性表达式</h2><h3 id="数值微分"><a href="#数值微分" class="headerlink" title="数值微分"></a>数值微分</h3><h4 id="求差分：diff-x-n"><a href="#求差分：diff-x-n" class="headerlink" title="求差分：diff(x,n)"></a>求差分：<code>diff(x,n)</code></h4><p>使用<code>diff(X, n)</code>计算向量<code>X</code>的<code>n</code>阶差分,<code>n</code>默认为<code>1</code>.</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="number">1</span> <span class="number">2</span> <span class="number">5</span> <span class="number">2</span> <span class="number">1</span>];</span><br><span class="line">diff(x);	<span class="comment">% 得到 [1 3 -3 -1]</span></span><br><span class="line">diff(x,<span class="number">1</span>);	<span class="comment">% 得到 [1 3 -3 -1] </span></span><br><span class="line">diff(x,<span class="number">2</span>);	<span class="comment">% 得到 [2 -6 2] 相当于对diff(x,1)的返回值进行差分运算</span></span><br></pre></td></tr></table></figure>
-
-<h4 id="求导数：diff-y-diff-x"><a href="#求导数：diff-y-diff-x" class="headerlink" title="求导数：diff(y)./diff(x)"></a>求导数：<code>diff(y)./diff(x)</code></h4><p>使用导数的定义：</p>
-<p>$$<br>f^{‘}(x) &#x3D; \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}<br>$$</p>
+<p><span class="math display">\[\int f(x) dx
+=x^{5}-0.6667x^3+x+3\]</span></p>
+<h2 id="非线性表达式">非线性表达式</h2>
+<h3 id="数值微分">数值微分</h3>
+<h4 id="求差分diffxn">求差分：<code>diff(x,n)</code></h4>
+<p>使用<code>diff(X, n)</code>计算向量<code>X</code>的<code>n</code>阶差分,<code>n</code>默认为<code>1</code>.
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = [<span class="number">1</span> <span class="number">2</span> <span class="number">5</span> <span class="number">2</span> <span class="number">1</span>];</span><br><span class="line">diff(x);	<span class="comment">% 得到 [1 3 -3 -1]</span></span><br><span class="line">diff(x,<span class="number">1</span>);	<span class="comment">% 得到 [1 3 -3 -1] </span></span><br><span class="line">diff(x,<span class="number">2</span>);	<span class="comment">% 得到 [2 -6 2] 相当于对diff(x,1)的返回值进行差分运算</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="求导数diffy.diffx">求导数：<code>diff(y)./diff(x)</code></h4>
+<p>使用导数的定义：</p>
+<p><span class="math display">\[
+f^{&#39;}(x) = \lim_{h \to 0} \frac{f(x_0+h)-f(x_0)}{h}
+\]</span></p>
 
     </div>
 
@@ -315,13 +337,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">12k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动

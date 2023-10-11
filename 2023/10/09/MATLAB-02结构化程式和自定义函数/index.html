@@ -19,12 +19,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"silver-ray.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="MATLAB Script A file containing a series of MATLAB commands Pretty much like a C&#x2F;C++ program However Script does not need to be compiled before run   Scripts need to be saved to as &lt;file&gt;.m">
+    <meta name="description" content="MATLAB Script  A file containing a series of MATLAB commands Pretty much like a C&#x2F;C++ program  However Script does not need to be compiled before run  Scripts need to be saved to as &lt;file&amp;gt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MATLAB-02结构化程式和自定义函数">
 <meta property="og:url" content="https://silver-ray.github.io/2023/10/09/MATLAB-02%E7%BB%93%E6%9E%84%E5%8C%96%E7%A8%8B%E5%BC%8F%E5%92%8C%E8%87%AA%E5%AE%9A%E4%B9%89%E5%87%BD%E6%95%B0/index.html">
 <meta property="og:site_name" content="Ray的小站">
-<meta property="og:description" content="MATLAB Script A file containing a series of MATLAB commands Pretty much like a C&#x2F;C++ program However Script does not need to be compiled before run   Scripts need to be saved to as &lt;file&gt;.m">
+<meta property="og:description" content="MATLAB Script  A file containing a series of MATLAB commands Pretty much like a C&#x2F;C++ program  However Script does not need to be compiled before run  Scripts need to be saved to as &lt;file&amp;gt">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-09T12:57:44.597Z">
 <meta property="article:modified_time" content="2023-10-03T12:57:18.701Z">
@@ -113,7 +113,10 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#MATLAB-Script"><span class="nav-number">1.</span> <span class="nav-text">MATLAB Script</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Script-Flow"><span class="nav-number">1.1.</span> <span class="nav-text">Script Flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Flow-Control"><span class="nav-number">1.2.</span> <span class="nav-text">Flow Control</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Rational-Operators"><span class="nav-number">1.3.</span> <span class="nav-text">Rational Operators</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#if-elseif-else"><span class="nav-number">1.4.</span> <span class="nav-text">if elseif else</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#switch"><span class="nav-number">1.5.</span> <span class="nav-text">switch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while"><span class="nav-number">1.6.</span> <span class="nav-text">while</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for"><span class="nav-number">1.7.</span> <span class="nav-text">for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Pre-allocating-Space-to-Varibles"><span class="nav-number">1.8.</span> <span class="nav-text">Pre-allocating Space to Varibles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#break"><span class="nav-number">1.9.</span> <span class="nav-text">break</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tips-for-Script-Writing"><span class="nav-number">1.10.</span> <span class="nav-text">Tips for Script Writing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Content-of-MATLAB-Built-in-Function"><span class="nav-number">1.11.</span> <span class="nav-text">Content of MATLAB Built-in Function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Use-Define-Functions"><span class="nav-number">1.12.</span> <span class="nav-text">Use Define Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Function-with-Multiple-Inputs-and-Outputs"><span class="nav-number">1.13.</span> <span class="nav-text">Function with Multiple Inputs and Outputs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#The-use-of-disp"><span class="nav-number">1.14.</span> <span class="nav-text">The use of disp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Function-Default-Variables"><span class="nav-number">1.15.</span> <span class="nav-text">Function Default Variables</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Function-Handle"><span class="nav-number">1.16.</span> <span class="nav-text">Function Handle</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#matlab-script"><span class="nav-number">1.</span> <span class="nav-text">MATLAB Script</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#script-flow"><span class="nav-number">1.1.</span> <span class="nav-text">Script Flow</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#flow-control"><span class="nav-number">1.2.</span> <span class="nav-text">Flow Control</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#rational-operators"><span class="nav-number">1.3.</span> <span class="nav-text">Rational Operators</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#if-elseif-else"><span class="nav-number">1.4.</span> <span class="nav-text">if elseif else</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#switch"><span class="nav-number">1.5.</span> <span class="nav-text">switch</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#while"><span class="nav-number">1.6.</span> <span class="nav-text">while</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#for"><span class="nav-number">1.7.</span> <span class="nav-text">for</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#pre-allocating-space-to-varibles"><span class="nav-number">1.8.</span> <span class="nav-text">Pre-allocating Space to
+Varibles</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#break"><span class="nav-number">1.9.</span> <span class="nav-text">break</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tips-for-script-writing"><span class="nav-number">1.10.</span> <span class="nav-text">Tips for Script Writing</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#content-of-matlab-built-in-function"><span class="nav-number">1.11.</span> <span class="nav-text">Content of MATLAB Built-in
+Function</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#use-define-functions"><span class="nav-number">1.12.</span> <span class="nav-text">Use Define Functions</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#function-with-multiple-inputs-and-outputs"><span class="nav-number">1.13.</span> <span class="nav-text">Function with
+Multiple Inputs and Outputs</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#the-use-of-disp"><span class="nav-number">1.14.</span> <span class="nav-text">The use of disp</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#function-default-variables"><span class="nav-number">1.15.</span> <span class="nav-text">Function Default Variables</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#function-handle"><span class="nav-number">1.16.</span> <span class="nav-text">Function Handle</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -215,14 +218,14 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span></span>
+      <span>3.9k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
         <i class="far fa-clock"></i>
       </span>
       <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>NaN:aN</span>
+      <span>7 分钟</span>
     </span>
 </div>
 
@@ -232,128 +235,166 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><h2 id="MATLAB-Script"><a href="#MATLAB-Script" class="headerlink" title="MATLAB Script"></a>MATLAB Script</h2><ul>
+    <div class="post-body" itemprop="articleBody"><h2 id="matlab-script">MATLAB Script</h2>
+<ul>
 <li>A file containing a series of MATLAB commands</li>
-<li>Pretty much like a C&#x2F;C++ program<ul>
+<li>Pretty much like a C/C++ program
+<ul>
 <li>However Script does not need to be compiled before run</li>
+</ul></li>
+<li>Scripts need to be saved to as <code>&lt;file&gt;.m</code> file
+before they can be run</li>
 </ul>
-</li>
-<li>Scripts need to be saved to as <code>&lt;file&gt;.m</code> file  before they can be run</li>
-</ul>
-<p><code>%%</code> is the symbol of section, we can run a single section</p>
+<p><code>%%</code> is the symbol of section, we can run a single
+section</p>
 <p>use start indent to make code more readable</p>
-<h3 id="Script-Flow"><a href="#Script-Flow" class="headerlink" title="Script Flow"></a>Script Flow</h3><ul>
+<h3 id="script-flow">Script Flow</h3>
+<ul>
 <li>Typically scripts run from the first line to the last</li>
-<li>Structured programming techniques(subroutine, loop. condition, etc.) are applied to make the program looks neat</li>
+<li>Structured programming techniques(subroutine, loop. condition, etc.)
+are applied to make the program looks neat</li>
 </ul>
-<h3 id="Flow-Control"><a href="#Flow-Control" class="headerlink" title="Flow Control"></a>Flow Control</h3><p>![[MATLAB2~flow control.png]]</p>
-<h3 id="Rational-Operators"><a href="#Rational-Operators" class="headerlink" title="Rational Operators"></a>Rational Operators</h3><p>![[MATLAB2~relational operator.png]]</p>
-<h3 id="if-elseif-else"><a href="#if-elseif-else" class="headerlink" title="if elseif else"></a>if elseif else</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition1</span><br><span class="line">	statement1</span><br><span class="line"><span class="keyword">elseif</span> condition2</span><br><span class="line">	statement2</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	statement3</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="switch"><a href="#switch" class="headerlink" title="switch"></a>switch</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> expression</span><br><span class="line"><span class="keyword">case</span> value1</span><br><span class="line">	statement1</span><br><span class="line"><span class="keyword">case</span> value2</span><br><span class="line">	statement2</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line"><span class="keyword">otherwise</span></span><br><span class="line">	statement</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="while"><a href="#while" class="headerlink" title="while"></a>while</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> expression</span><br><span class="line">	statement</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="for"><a href="#for" class="headerlink" title="for"></a>for</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> varible = start: increment: <span class="keyword">end</span></span><br><span class="line">	commands</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="Pre-allocating-Space-to-Varibles"><a href="#Pre-allocating-Space-to-Varibles" class="headerlink" title="Pre-allocating Space to Varibles"></a>Pre-allocating Space to Varibles</h3><p>Method A:</p>
+<h3 id="flow-control">Flow Control</h3>
+<p>[[MATLAB2~flow control.png]]</p>
+<h3 id="rational-operators">Rational Operators</h3>
+<p>[[MATLAB2~relational operator.png]]</p>
+<h3 id="if-elseif-else">if elseif else</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition1</span><br><span class="line">	statement1</span><br><span class="line"><span class="keyword">elseif</span> condition2</span><br><span class="line">	statement2</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	statement3</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h3 id="switch">switch</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> expression</span><br><span class="line"><span class="keyword">case</span> value1</span><br><span class="line">	statement1</span><br><span class="line"><span class="keyword">case</span> value2</span><br><span class="line">	statement2</span><br><span class="line">.</span><br><span class="line">.</span><br><span class="line"><span class="keyword">otherwise</span></span><br><span class="line">	statement</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h3 id="while">while</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> expression</span><br><span class="line">	statement</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h3 id="for">for</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> varible = start: increment: <span class="keyword">end</span></span><br><span class="line">	commands</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<h3 id="pre-allocating-space-to-varibles">Pre-allocating Space to
+Varibles</h3>
+<p>Method A:</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">tic </span><br><span class="line"><span class="keyword">for</span> ii = <span class="number">1</span>:<span class="number">2000</span></span><br><span class="line">    <span class="keyword">for</span> jj = <span class="number">1</span>:<span class="number">2000</span></span><br><span class="line">        A(ii,jj) = ii + jj;</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line">toc</span><br><span class="line"></span><br><span class="line"><span class="comment">%历时 1.727258 秒。</span></span><br></pre></td></tr></table></figure>
-
 <p>Method B:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">tic</span><br><span class="line">B = zeros(2000, 2000);</span><br><span class="line">for iii = 1:size(B,1)</span><br><span class="line">    for jjj = 1:size(B,2)</span><br><span class="line">        B(iii, jjj) = iii + jjj;</span><br><span class="line">    end</span><br><span class="line">end</span><br><span class="line">toc</span><br><span class="line"></span><br><span class="line">%历时 0.020441 秒。</span><br></pre></td></tr></table></figure>
-
 <p>Method B is faster, because method B used Pre-allocating.</p>
 <p>The explanation of MATLAB:</p>
 <blockquote>
-<p>The size of the indicated variable or array appears to be changing with each loop iteration.Commonly, this message appears because an array is growing by assignment or concatenation.Growing an array by assignment or concatenation can be expensive.For large arrays,MATLAB must allocate a new block of memory and copy the older array contents to the new array as it makes each assignment.</p>
+<p>The size of the indicated variable or array appears to be changing
+with each loop iteration.Commonly, this message appears because an array
+is growing by assignment or concatenation.Growing an array by assignment
+or concatenation can be expensive.For large arrays,MATLAB must allocate
+a new block of memory and copy the older array contents to the new array
+as it makes each assignment.</p>
 </blockquote>
 <blockquote>
-<p>Programs that change the size of a variable in this way can spend most of their run time in this inefficient activity.There is also significant overhead in shrinking an array on each iteration or in changing the size of a variable on each iteration. In such cases,MATLAB must reallocate and copy the contents repeatedly.</p>
+<p>Programs that change the size of a variable in this way can spend
+most of their run time in this inefficient activity.There is also
+significant overhead in shrinking an array on each iteration or in
+changing the size of a variable on each iteration. In such cases,MATLAB
+must reallocate and copy the contents repeatedly.</p>
 </blockquote>
-<h3 id="break"><a href="#break" class="headerlink" title="break"></a>break</h3><p>Used in iteration where convergence is not guaranteed.</p>
-<h3 id="Tips-for-Script-Writing"><a href="#Tips-for-Script-Writing" class="headerlink" title="Tips for Script Writing"></a>Tips for Script Writing</h3><ul>
-<li>At the beginning of your script, use command<ul>
-<li><code>clear all</code> to remove previous variables </li>
+<h3 id="break">break</h3>
+<p>Used in iteration where convergence is not guaranteed.</p>
+<h3 id="tips-for-script-writing">Tips for Script Writing</h3>
+<ul>
+<li>At the beginning of your script, use command
+<ul>
+<li><code>clear all</code> to remove previous variables</li>
 <li><code>close all</code> to close all figures</li>
-</ul>
-</li>
-<li>Use semicolon <code>;</code> at the end of commands to inhibit unwanted output </li>
-<li>Use ellipsis <code>...</code> to make scripts more readable<ul>
-<li>MATLAB2020 and later version can break line with no need to use ellipsis</li>
-</ul>
-</li>
-<li>Press <code>Ctrl+C</code> to terminate the script before </li>
+</ul></li>
+<li>Use semicolon <code>;</code> at the end of commands to inhibit
+unwanted output</li>
+<li>Use ellipsis <code>...</code> to make scripts more readable
+<ul>
+<li>MATLAB2020 and later version can break line with no need to use
+ellipsis</li>
+</ul></li>
+<li>Press <code>Ctrl+C</code> to terminate the script before</li>
 <li>conclusion</li>
 </ul>
-<h3 id="Content-of-MATLAB-Built-in-Function"><a href="#Content-of-MATLAB-Built-in-Function" class="headerlink" title="Content of MATLAB Built-in Function"></a>Content of MATLAB Built-in Function</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;edit(which(<span class="string">&#x27;mean.m&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">% open mean.m</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">y</span> = <span class="title">mean</span><span class="params">(x)</span></span></span><br></pre></td></tr></table></figure>
-
-<p>In this example, function is a keyword, y is the name of output variable, mean is the name of function</p>
-<h3 id="Use-Define-Functions"><a href="#Use-Define-Functions" class="headerlink" title="Use Define Functions"></a>Use Define Functions</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">x</span> = <span class="title">freebody</span><span class="params">(x0,v0,t)</span></span></span><br><span class="line"><span class="comment">% calculation of free falling</span></span><br><span class="line"><span class="comment">% x0: initial displacement of in m</span></span><br><span class="line"><span class="comment">% v0: initial velocity in m/sec</span></span><br><span class="line"><span class="comment">% t: the elapsed time in sec</span></span><br><span class="line"><span class="comment">% x: the depth of falling in m</span></span><br><span class="line"></span><br><span class="line">x = x0 + v0.*t + <span class="number">1</span>/<span class="number">2</span>*<span class="number">9.8</span>*t.*t;</span><br></pre></td></tr></table></figure>
-
+<h3 id="content-of-matlab-built-in-function">Content of MATLAB Built-in
+Function</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;edit(which(<span class="string">&#x27;mean.m&#x27;</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">% open mean.m</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">y</span> = <span class="title">mean</span><span class="params">(x)</span></span></span><br></pre></td></tr></table></figure>
+<p>In this example, function is a keyword, y is the name of output
+variable, mean is the name of function</p>
+<h3 id="use-define-functions">Use Define Functions</h3>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">x</span> = <span class="title">freebody</span><span class="params">(x0,v0,t)</span></span></span><br><span class="line"><span class="comment">% calculation of free falling</span></span><br><span class="line"><span class="comment">% x0: initial displacement of in m</span></span><br><span class="line"><span class="comment">% v0: initial velocity in m/sec</span></span><br><span class="line"><span class="comment">% t: the elapsed time in sec</span></span><br><span class="line"><span class="comment">% x: the depth of falling in m</span></span><br><span class="line"></span><br><span class="line">x = x0 + v0.*t + <span class="number">1</span>/<span class="number">2</span>*<span class="number">9.8</span>*t.*t;</span><br></pre></td></tr></table></figure>
 <p>Use the operator <code>.*</code> to support input vector.</p>
-<p>For example, <code>freebody([0 1], [0 1], [10 20])</code> will output <code>[490 1981]</code></p>
-<h3 id="Function-with-Multiple-Inputs-and-Outputs"><a href="#Function-with-Multiple-Inputs-and-Outputs" class="headerlink" title="Function with Multiple Inputs and Outputs"></a>Function with Multiple Inputs and Outputs</h3><ul>
-<li>The acceleration of a particle and the force acting on it are as follows:</li>
+<p>For example, <code>freebody([0 1], [0 1], [10 20])</code> will output
+<code>[490 1981]</code></p>
+<h3 id="function-with-multiple-inputs-and-outputs">Function with
+Multiple Inputs and Outputs</h3>
+<ul>
+<li>The acceleration of a particle and the force acting on it are as
+follows:</li>
 </ul>
-<p>$$<br>\begin{aligned}<br>a &amp;&#x3D; \frac{v_2 - v_1}{t_2 - t_1}\<br>F &amp;&#x3D; ma<br>\end{aligned}<br>$$</p>
-<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[a F]</span> = <span class="title">acc</span><span class="params">(v2, v1, t2, t1, m)</span></span></span><br><span class="line">a = (v2 - v1)./(t2 - t1);</span><br><span class="line">F = m.*a;</span><br></pre></td></tr></table></figure>
-
+<p><span class="math display">\[
+\begin{aligned}
+a &amp;= \frac{v_2 - v_1}{t_2 - t_1}\\
+F &amp;= ma
+\end{aligned}
+\]</span> <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="params">[a F]</span> = <span class="title">acc</span><span class="params">(v2, v1, t2, t1, m)</span></span></span><br><span class="line">a = (v2 - v1)./(t2 - t1);</span><br><span class="line">F = m.*a;</span><br></pre></td></tr></table></figure></p>
 <blockquote>
-<p>[!note]<br>output single variable as array<br>X &#x3D; acc(10, 5, 2, 1, 10); %X &#x3D; 5<br>[X Y] &#x3D; acc(10, 5, 2, 1, 10); %X &#x3D; 5, Y &#x3D; 50</p>
+<p>[!note] output single variable as array X = acc(10, 5, 2, 1, 10); %X
+= 5 [X Y] = acc(10, 5, 2, 1, 10); %X = 5, Y = 50</p>
 </blockquote>
 <p>If we use the following form, the output will be a array.</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">out</span> = <span class="title">acc</span><span class="params">(v2, v1, t2, t1, m)</span></span></span><br><span class="line">out(<span class="number">1</span>) = (v2 - v1)./(t2 - t1);</span><br><span class="line">out(<span class="number">2</span>) = m.*a;</span><br></pre></td></tr></table></figure>
-
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function converter</span><br><span class="line"></span><br><span class="line">F = input(&#x27;The temperature in F: &#x27;);</span><br><span class="line">while ~isempty(F)</span><br><span class="line">    disp([&#x27;The temperature in C: &#x27; num2str((F-32)*5/9)]);</span><br><span class="line">    F = input(&#x27;The temperature in F: &#x27;);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
-
-<h3 id="The-use-of-disp"><a href="#The-use-of-disp" class="headerlink" title="The use of disp"></a>The use of disp</h3><p><code>disp()</code> 仅接受一个参数，下面的这种写法是错误的：</p>
-<p><code>disp(&#39;aaa&#39;,32)</code></p>
-<p><code>disp([&#39;aaa&#39;,78])</code> 会输出’aaaN’，因为disp将78当做一个ASCII码字符作为显示</p>
+<h3 id="the-use-of-disp">The use of disp</h3>
+<p><code>disp()</code> 仅接受一个参数，下面的这种写法是错误的：</p>
+<p><code>disp('aaa',32)</code></p>
+<p><code>disp(['aaa',78])</code>
+会输出'aaaN'，因为disp将78当做一个ASCII码字符作为显示</p>
 <p>若想实现字符串和数字的混合输出，可以使用如下形式</p>
-<p><code>disp([&#39;aaa&#39;,num2str(32)])</code>，输出aaa32。</p>
-<p><code>num2str()</code> 函数将数字转换为字符类型数组，再通过矩阵的拼接，将两个字符类型数组拼接位一个数组，从而正常显示输出</p>
+<p><code>disp(['aaa',num2str(32)])</code>，输出aaa32。</p>
+<p><code>num2str()</code>
+函数将数字转换为字符类型数组，再通过矩阵的拼接，将两个字符类型数组拼接位一个数组，从而正常显示输出</p>
 <blockquote>
 <p>[!warning] 以下表达也可显示，但是显示形式不便于阅读</p>
 </blockquote>
 <blockquote>
-<p><code>disp(&#123;&#39;aaa&#39;,32&#125;)</code>：使用元胞数组，显示的内容为 <code>&#123;&#39;aaa&#39;&#125;    &#123;[32]&#125;</code></p>
+<p><code>disp(&#123;'aaa',32&#125;)</code>：使用元胞数组，显示的内容为
+<code>&#123;'aaa'&#125;    &#123;[32]&#125;</code></p>
 </blockquote>
-<h3 id="Function-Default-Variables"><a href="#Function-Default-Variables" class="headerlink" title="Function Default Variables"></a>Function Default Variables</h3><p>函数参数意义</p>
-<p>imputname	输入变量名列表</p>
-<p>mfilename	函数源代码文件名</p>
-<p>nargin	输入变量数</p>
-<p>nargout	输出变量个数</p>
-<p>varargin	可变长输入参数列表</p>
-<p>varargout	可变长输出参数列表</p>
+<h3 id="function-default-variables">Function Default Variables</h3>
+<p>函数参数意义</p>
+<p>imputname 输入变量名列表</p>
+<p>mfilename 函数源代码文件名</p>
+<p>nargin 输入变量数</p>
+<p>nargout 输出变量个数</p>
+<p>varargin 可变长输入参数列表</p>
+<p>varargout 可变长输出参数列表</p>
 <table>
 <thead>
-<tr>
-<th align="left">Variables</th>
-<th align="left">Meaning</th>
+<tr class="header">
+<th style="text-align: left;">Variables</th>
+<th style="text-align: left;">Meaning</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">inputname</td>
-<td align="left">Variable name of function input</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">inputname</td>
+<td style="text-align: left;">Variable name of function input</td>
 </tr>
-<tr>
-<td align="left">mfilename</td>
-<td align="left">File name of currently running function</td>
+<tr class="even">
+<td style="text-align: left;">mfilename</td>
+<td style="text-align: left;">File name of currently running
+function</td>
 </tr>
-<tr>
-<td align="left">nargin</td>
-<td align="left">Number of function input arguments</td>
+<tr class="odd">
+<td style="text-align: left;">nargin</td>
+<td style="text-align: left;">Number of function input arguments</td>
 </tr>
-<tr>
-<td align="left">varargin</td>
-<td align="left">Variable length of argrument list</td>
+<tr class="even">
+<td style="text-align: left;">varargin</td>
+<td style="text-align: left;">Variable length of argrument list</td>
 </tr>
-<tr>
-<td align="left">varargout</td>
-<td align="left">Varible length output argument list</td>
+<tr class="odd">
+<td style="text-align: left;">varargout</td>
+<td style="text-align: left;">Varible length output argument list</td>
 </tr>
-</tbody></table>
-<h3 id="Function-Handle"><a href="#Function-Handle" class="headerlink" title="Function Handle"></a>Function Handle</h3><p>A way to create anonymous functions, i.e., one line expression functions that do not have not have to be defined in .m files</p>
+</tbody>
+</table>
+<h3 id="function-handle">Function Handle</h3>
+<p>A way to create anonymous functions, i.e., one line expression
+functions that do not have not have to be defined in .m files</p>
 <figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f = @(x) <span class="built_in">exp</span>(<span class="number">-2</span>*x);</span><br><span class="line">x = <span class="number">0</span>:<span class="number">0.1</span>:<span class="number">0.2</span>;</span><br><span class="line"><span class="built_in">plot</span>(x, f(x));</span><br></pre></td></tr></table></figure>
 
     </div>
@@ -377,8 +418,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2023/10/09/MATLAB-03%E5%8F%98%E9%87%8F%E5%92%8C%E6%A1%A3%E6%A1%88%E5%AD%98%E5%8F%96/" rel="next" title="MATLAB Variables and Data access">
-                  MATLAB Variables and Data access <i class="fa fa-angle-right"></i>
+                <a href="/2023/10/09/MATLAB-03%E5%8F%98%E9%87%8F%E5%92%8C%E6%A1%A3%E6%A1%88%E5%AD%98%E5%8F%96/" rel="next" title="MATLAB-03变量和档案存取">
+                  MATLAB-03变量和档案存取 <i class="fa fa-angle-right"></i>
                 </a>
             </div>
           </div>
@@ -410,13 +451,13 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">NaNm</span>
+    <span title="站点总字数">12k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">NaN:aN</span>
+    <span title="站点阅读时长">22 分钟</span>
   </span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
